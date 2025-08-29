@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 
 interface ArticleCardProps {
@@ -7,15 +8,15 @@ interface ArticleCardProps {
   imageUrl?: string;
 }
 
-export const ArticleCard: React.FC<ArticleCardProps> = ({ 
+export const ArticleCard: React.FC<ArticleCardProps> = ({
   title = "Article Title from Sanity",
   excerpt = "Short excerpt pulled from Sanity CMS…",
-  imageUrl
+  imageUrl,
 }) => (
   <article className="group overflow-hidden rounded-2xl border border-secondary/20 shadow-sm bg-white">
-    <div className="aspect-[16/9] w-full bg-secondary/10">
+    <div className="relative aspect-[16/9] w-full bg-secondary/10">
       {imageUrl ? (
-        <img src={imageUrl} alt={title} className="h-full w-full object-cover" />
+        <Image src={imageUrl} alt={title} className="object-cover" fill />
       ) : (
         <div className="flex h-full w-full items-center justify-center text-secondary">Article Image</div>
       )}
