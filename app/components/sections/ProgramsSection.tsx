@@ -43,9 +43,9 @@ export const ProgramsSection: React.FC = () => (
           Experienced, accredited coaches dedicated to athlete wellbeing and long‑term development.
         </p>
         <ul className="mt-4 grid list-disc gap-2 pl-5 text-sm text-gray-700">
-          <li>Head Coach – Jane Doe</li>
-          <li>Junior Lead – John K.</li>
-          <li>S&C Coach – Alex M.</li>
+          <li>Head Coach – Exra Kakali</li>
+          <li>Assistant Head Coach – Coach Vincent</li>
+          <li>Learn to Swim Coach – Mugisha Jacob</li>
         </ul>
       </div>
       <div className="rounded-2xl border border-gray-200 p-6">

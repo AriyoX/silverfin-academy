@@ -16,8 +16,8 @@ export const Footer: React.FC = () => (
           <h4 className="text-sm font-semibold">Contact</h4>
           <ul className="mt-3 space-y-2 text-sm text-gray-600">
             <li className="flex items-center gap-2"><Phone className="h-4 w-4" /> +256 700 000 000</li>
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> info@silverfin.ac.ug</li>
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Silverfin Aquatic Centre, Kampala</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> info@silverfinacademy.org</li>
+            <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Hill Preparatry School, Kampala</li>
           </ul>
         </div>
         <div>
