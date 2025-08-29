@@ -100,8 +100,8 @@ export const ContactForm: React.FC = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className={`w-full rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-blue-600 ${
-            errors.name ? 'border-red-300' : 'border-gray-300'
+          className={`w-full rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-primary ${
+            errors.name ? 'border-red-300' : 'border-secondary/30'
           }`}
           placeholder="Full name"
           required
@@ -115,8 +115,8 @@ export const ContactForm: React.FC = () => {
           type="email"
           value={formData.email}
           onChange={handleChange}
-          className={`w-full rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-blue-600 ${
-            errors.email ? 'border-red-300' : 'border-gray-300'
+          className={`w-full rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-primary ${
+            errors.email ? 'border-red-300' : 'border-secondary/30'
           }`}
           placeholder="Email"
           required
@@ -128,7 +128,7 @@ export const ContactForm: React.FC = () => {
         name="phone"
         value={formData.phone}
         onChange={handleChange}
-        className="rounded-xl border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-600"
+        className="rounded-xl border border-secondary/30 px-4 py-3 outline-none focus:ring-2 focus:ring-primary"
         placeholder="Phone"
       />
 
@@ -137,8 +137,8 @@ export const ContactForm: React.FC = () => {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className={`min-h-[120px] w-full rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-blue-600 ${
-            errors.message ? 'border-red-300' : 'border-gray-300'
+          className={`min-h-[120px] w-full rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-primary ${
+            errors.message ? 'border-red-300' : 'border-secondary/30'
           }`}
           placeholder="How can we help?"
           required

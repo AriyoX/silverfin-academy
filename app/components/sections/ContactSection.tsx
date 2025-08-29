@@ -5,27 +5,27 @@ import { ContactForm } from "../forms/ContactForm";
 import { AnimatedSection } from "../ui/AnimatedSection";
 
 export const ContactSection: React.FC = () => (
-  <Section id="contact" className="bg-gray-50">
+  <Section id="contact" className="bg-secondary/5">
     <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
       <AnimatedSection animation="slideInLeft">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">Contact</p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Get in touch</h2>
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary">Contact</p>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight text-primary md:text-4xl">Get in touch</h2>
           <div className="mt-6">
             <ContactForm />
           </div>
-          <div className="mt-8 grid gap-3 text-sm text-gray-700">
-            <div className="flex items-center gap-2"><Phone className="h-4 w-4" /> +256 700 000 000</div>
-            <div className="flex items-center gap-2"><Mail className="h-4 w-4" /> info@silverfin.ac.ug</div>
-            <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Silverfin Aquatic Centre, Kampala, Uganda</div>
+          <div className="mt-8 grid gap-3 text-sm text-secondary">
+            <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +256 700 000 000</div>
+            <div className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> info@silverfin.ac.ug</div>
+            <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Silverfin Aquatic Centre, Kampala, Uganda</div>
             <div className="mt-2 flex items-center gap-4">
-              <a href="#" aria-label="Instagram" className="rounded-full border border-gray-300 p-2 hover:border-gray-400">
+              <a href="#" aria-label="Instagram" className="rounded-full border border-primary/30 p-2 text-primary hover:border-primary hover:bg-primary hover:text-white transition-all">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" aria-label="Facebook" className="rounded-full border border-gray-300 p-2 hover:border-gray-400">
+              <a href="#" aria-label="Facebook" className="rounded-full border border-primary/30 p-2 text-primary hover:border-primary hover:bg-primary hover:text-white transition-all">
                 <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" aria-label="YouTube" className="rounded-full border border-gray-300 p-2 hover:border-gray-400">
+              <a href="#" aria-label="YouTube" className="rounded-full border border-primary/30 p-2 text-primary hover:border-primary hover:bg-primary hover:text-white transition-all">
                 <Youtube className="h-4 w-4" />
               </a>
             </div>
@@ -33,7 +33,7 @@ export const ContactSection: React.FC = () => (
         </div>
       </AnimatedSection>
       <AnimatedSection animation="slideInRight" delay={200}>
-        <div className="overflow-hidden rounded-2xl border border-gray-200">
+        <div className="overflow-hidden rounded-2xl border border-secondary/20">
           <iframe
             title="Map"
             className="h-[420px] w-full"

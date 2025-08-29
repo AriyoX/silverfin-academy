@@ -21,7 +21,7 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
   const [logoError, setLogoError] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50 w-full border-b border-secondary/20 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 md:py-5">
         <div className="flex items-center gap-3">
           {!logoError && (
@@ -34,27 +34,27 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
               onError={() => setLogoError(true)}
             />
           )}
-          <span className="text-xl font-bold tracking-tight">Silverfin Academy</span>
+          <span className="text-xl font-bold tracking-tight text-primary">Silverfin Academy</span>
         </div>
 
         <div className="hidden items-center gap-8 md:flex">
-          <nav className="flex items-center gap-6 text-base font-medium text-gray-700">
+          <nav className="flex items-center gap-6 text-base font-medium text-secondary">
             {navItems.map((item) => (
               <a 
                 key={item.label} 
                 href={item.href} 
-                className="hover:text-blue-600 transition-colors"
+                className="hover:text-primary transition-colors"
               >
                 {item.label}
               </a>
             ))}
           </nav>
           <div className="hidden items-center gap-5 lg:flex">
-            <a href="tel:+256700000000" className="flex items-center gap-2 text-sm text-gray-700">
-              <Phone className="h-4 w-4" /> +256 700 000 000
+            <a href="tel:+256700000000" className="flex items-center gap-2 text-sm text-secondary">
+              <Phone className="h-4 w-4 text-primary" /> +256 700 000 000
             </a>
-            <a href="mailto:info@silverfinacademy.org" className="flex items-center gap-2 text-sm text-gray-700">
-              <Mail className="h-4 w-4" /> info@silverfinacademy.org
+            <a href="mailto:info@silverfinacademy.org" className="flex items-center gap-2 text-sm text-secondary">
+              <Mail className="h-4 w-4 text-primary" /> info@silverfinacademy.org
             </a>
             <Button size="sm" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Join Now
@@ -62,21 +62,21 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
           </div>
         </div>
 
-        <button className="md:hidden" onClick={toggleMenu} aria-label="Toggle menu">
+        <button className="md:hidden text-primary" onClick={toggleMenu} aria-label="Toggle menu">
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
       
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="border-t border-gray-200 bg-white md:hidden">
+        <div className="border-t border-secondary/20 bg-white md:hidden">
           <div className="mx-auto max-w-7xl px-4 py-5">
             <nav className="grid gap-4 text-base font-medium">
               {navItems.map((item) => (
                 <a 
                   key={item.label} 
                   href={item.href} 
-                  className="py-1 transition-colors hover:text-blue-600"
+                  className="py-1 transition-colors hover:text-primary text-secondary"
                   onClick={() => toggleMenu()}
                 >
                   {item.label}
@@ -84,11 +84,11 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
               ))}
             </nav>
             <div className="mt-4 grid gap-3 text-sm">
-              <a href="tel:+256700000000" className="flex items-center gap-2">
-                <Phone className="h-4 w-4" /> +256 700 000 000
+              <a href="tel:+256700000000" className="flex items-center gap-2 text-secondary">
+                <Phone className="h-4 w-4 text-primary" /> +256 700 000 000
               </a>
-              <a href="mailto:info@silverfin.ac.ug" className="flex items-center gap-2">
-                <Mail className="h-4 w-4" /> info@silverfin.ac.ug
+              <a href="mailto:info@silverfin.ac.ug" className="flex items-center gap-2 text-secondary">
+                <Mail className="h-4 w-4 text-primary" /> info@silverfin.ac.ug
               </a>
               <Button 
                 size="sm" 

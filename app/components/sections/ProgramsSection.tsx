@@ -24,10 +24,10 @@ export const ProgramsSection: React.FC = () => (
   <Section id="programs">
     <div className="mb-8 flex items-end justify-between gap-4">
       <div>
-        <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">Programs</p>
-        <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Training Pathways</h2>
+        <p className="text-sm font-semibold uppercase tracking-wider text-primary">Programs</p>
+        <h2 className="mt-2 text-3xl font-bold tracking-tight text-primary md:text-4xl">Training Pathways</h2>
       </div>
-      <a href="#contact" className="hidden rounded-full border border-gray-300 px-4 py-2 text-sm font-semibold hover:border-gray-400 md:inline-flex">
+      <a href="#contact" className="hidden rounded-full border border-primary px-4 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition-all md:inline-flex">
         Book Assessment
       </a>
     </div>
@@ -37,23 +37,23 @@ export const ProgramsSection: React.FC = () => (
       ))}
     </div>
     <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
-      <div className="rounded-2xl border border-gray-200 p-6">
-        <h3 className="text-lg font-semibold">Our Coaches</h3>
-        <p className="mt-2 text-sm text-gray-600">
+      <div className="rounded-2xl border border-secondary/20 p-6 bg-white shadow-sm">
+        <h3 className="text-lg font-semibold text-primary">Our Coaches</h3>
+        <p className="mt-2 text-sm text-secondary">
           Experienced, accredited coaches dedicated to athlete wellbeing and long‑term development.
         </p>
-        <ul className="mt-4 grid list-disc gap-2 pl-5 text-sm text-gray-700">
+        <ul className="mt-4 grid list-disc gap-2 pl-5 text-sm text-secondary">
           <li>Head Coach – Exra Kakali</li>
           <li>Assistant Head Coach – Coach Vincent</li>
           <li>Learn to Swim Coach – Mugisha Jacob</li>
         </ul>
       </div>
-      <div className="rounded-2xl border border-gray-200 p-6">
-        <h3 className="text-lg font-semibold">Facilities</h3>
-        <p className="mt-2 text-sm text-gray-600">
+      <div className="rounded-2xl border border-secondary/20 p-6 bg-white shadow-sm">
+        <h3 className="text-lg font-semibold text-primary">Facilities</h3>
+        <p className="mt-2 text-sm text-secondary">
           Access to 25m indoor pool, gym, and recovery area with planned upgrades.
         </p>
-        <ul className="mt-4 grid list-disc gap-2 pl-5 text-sm text-gray-700">
+        <ul className="mt-4 grid list-disc gap-2 pl-5 text-sm text-secondary">
           <li>8‑lane 25m pool</li>
           <li>Strength & Conditioning space</li>
           <li>Video analysis</li>
