@@ -4,7 +4,7 @@ import { AnimatedSection } from "../ui/AnimatedSection";
 import { Phone } from "lucide-react";
 
 export const AboutSection: React.FC = () => (
-  <Section id="about">
+  <Section id="about" className="bg-slate-50">
     <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2">
       <AnimatedSection animation="slideInLeft">
         <div>

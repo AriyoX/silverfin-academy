@@ -1,4 +1,5 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react';
+import { Logo } from './Logo';
 
 interface ErrorBoundaryState {
   hasError: boolean;
@@ -29,6 +30,9 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
       return this.props.fallback || (
         <div className="flex min-h-[200px] items-center justify-center rounded-lg border border-red-200 bg-red-50 p-8">
           <div className="text-center">
+            <div className="mb-4 flex justify-center">
+              <Logo size="md" showText={false} />
+            </div>
             <h2 className="text-lg font-semibold text-red-800">Something went wrong</h2>
             <p className="mt-2 text-sm text-red-600">We&apos;re sorry, but something unexpected happened.</p>
             <button

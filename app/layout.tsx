@@ -15,6 +15,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Silverfin Academy - Swimming Excellence",
   description: "Join Silverfin Academy and unlock swimming excellence with world‑class coaching, supportive community, and pathways from learn‑to‑swim to elite squads.",
+  icons: {
+    icon: [
+      { url: "/favicon.png" },
+      { url: "/logo/logo_transparent.png" },
+    ],
+    apple: "/logo/logo_transparent.png",
+  },
+  openGraph: {
+    title: "Silverfin Academy - Swimming Excellence",
+    description: "Join Silverfin Academy and unlock swimming excellence with world‑class coaching, supportive community, and pathways from learn‑to‑swim to elite squads.",
+    images: ["/logo/logo_transparent.png"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Silverfin Academy - Swimming Excellence",
+    description: "Join Silverfin Academy and unlock swimming excellence with world‑class coaching, supportive community, and pathways from learn‑to‑swim to elite squads.",
+    images: ["/logo/logo_transparent.png"],
+  },
 };
 
 export default function RootLayout({

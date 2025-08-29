@@ -1,9 +1,9 @@
 "use client"
 
-import React, { useState } from "react";
-import Image from "next/image";
+import React from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "../ui/Button";
+import { Logo } from "../ui/Logo";
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -18,24 +18,11 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
     { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact" }
   ];
-  const [logoError, setLogoError] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-secondary/20 bg-white/95 backdrop-blur overflow-x-hidden">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 md:py-5 min-w-0">
-        <div className="flex items-center gap-3 min-w-0 flex-shrink-0">
-          {!logoError && (
-            <Image
-              src="/logo.png"
-              alt="Silverfin Academy"
-              width={40}
-              height={40}
-              className="rounded-full bg-gray-100 object-cover flex-shrink-0"
-              onError={() => setLogoError(true)}
-            />
-          )}
-          <span className="text-lg sm:text-xl font-bold tracking-tight text-primary truncate">Silverfin Academy</span>
-        </div>
+        <Logo size="lg" textClassName="text-primary" />
 
         <div className="hidden items-center gap-8 md:flex">
           <nav className="flex items-center gap-6 text-base font-medium text-secondary">

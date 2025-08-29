@@ -1,15 +1,13 @@
 import React from "react";
 import { Phone, Mail, MapPin, Instagram, Facebook, Youtube } from "lucide-react";
+import { Logo } from "../ui/Logo";
 
 export const Footer: React.FC = () => (
   <footer className="border-t border-secondary/20 bg-primary overflow-x-hidden">
     <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 w-full">
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4">
         <div className="min-w-0">
-          <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-full bg-white/20 flex-shrink-0" />
-            <span className="text-lg font-bold text-white break-words">Silverfin Academy</span>
-          </div>
+          <Logo size="md" textClassName="text-white" />
           <p className="mt-3 text-sm text-white/80">Building swimmers for life.</p>
         </div>
         <div className="min-w-0">

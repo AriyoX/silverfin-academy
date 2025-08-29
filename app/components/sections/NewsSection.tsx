@@ -11,6 +11,7 @@ export const NewsSection: React.FC = () => (
         This grid is wired for Sanity integration. Replace the ArticleCard in future with mapped posts from GROQ query.
       </p>
     </div>
+    
     <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
       <ArticleCard />
       <ArticleCard />
@@ -18,7 +19,7 @@ export const NewsSection: React.FC = () => (
     </div>
     <div className="mt-8 text-center">
       <a href="#" className="inline-flex items-center gap-2 rounded-full border border-primary px-4 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition-all">
-        View all
+        View all club news
       </a>
     </div>
   </Section>

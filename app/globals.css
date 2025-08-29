@@ -69,3 +69,20 @@ body {
 .hover\:text-secondary:hover {
   color: var(--secondary);
 }
+
+/* Additional subtle background variations */
+.bg-primary\/3 {
+  background-color: rgb(23 35 108 / 0.03);
+}
+
+.bg-secondary\/3 {
+  background-color: rgb(113 115 111 / 0.03);
+}
+
+.bg-slate-50 {
+  background-color: #f8fafc;
+}
+
+.bg-blue-50\/30 {
+  background-color: rgb(239 246 255 / 0.3);
+}

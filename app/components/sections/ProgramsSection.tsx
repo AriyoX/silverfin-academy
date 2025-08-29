@@ -21,7 +21,7 @@ const programs = [
 ];
 
 export const ProgramsSection: React.FC = () => (
-  <Section id="programs">
+  <Section id="programs" className="bg-primary/3">
     <div className="mb-8 flex items-end justify-between gap-4">
       <div>
         <p className="text-sm font-semibold uppercase tracking-wider text-primary">Programs</p>
