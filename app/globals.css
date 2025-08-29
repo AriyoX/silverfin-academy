@@ -86,3 +86,96 @@ body {
 .bg-blue-50\/30 {
   background-color: rgb(239 246 255 / 0.3);
 }
+
+/* Button Enhancements */
+.btn-enhanced {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-enhanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.btn-enhanced:hover::before {
+  left: 100%;
+}
+
+/* Improved button focus states */
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Enhanced shadow and glow effects */
+.shadow-glow {
+  box-shadow: 0 4px 15px 0 rgba(23, 35, 108, 0.2);
+}
+
+.shadow-glow:hover {
+  box-shadow: 0 8px 25px 0 rgba(23, 35, 108, 0.3);
+}
+
+.shadow-white-glow {
+  box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.3);
+}
+
+.shadow-white-glow:hover {
+  box-shadow: 0 8px 25px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Hero button specific styles */
+.hero-button-outline {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.hero-button-outline:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* Hero Carousel Enhancements */
+.hero-carousel-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .hero-carousel-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* Smooth transitions for carousel controls */
+.carousel-control {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Ensure carousel navigation is accessible */
+.carousel-nav-button:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Optimize for performance */
+.carousel-image {
+  will-change: opacity;
+  transform: translateZ(0);
+}
