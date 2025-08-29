@@ -10,6 +10,7 @@ import { ProgramsSection } from "./components/sections/ProgramsSection";
 import { NewsSection } from "./components/sections/NewsSection";
 import { GallerySection } from "./components/sections/GallerySection";
 import { ContactSection } from "./components/sections/ContactSection";
+import { ErrorBoundary } from "./components/ui/ErrorBoundary";
 
 export default function Page() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -17,16 +18,18 @@ export default function Page() {
   const toggleMenu = () => setIsMenuOpen(prev => !prev);
 
   return (
-    <div className="min-h-screen scroll-smooth bg-white text-gray-900">
-      <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-      <HeroSection />
-      <AboutSection />
-      <StatsSection />
-      <ProgramsSection />
-      <NewsSection />
-      <GallerySection />
-      <ContactSection />
-      <Footer />
-    </div>
+    <ErrorBoundary>
+      <div className="min-h-screen scroll-smooth bg-white text-gray-900">
+        <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+        <HeroSection />
+        <AboutSection />
+        <StatsSection />
+        <ProgramsSection />
+        <NewsSection />
+        <GallerySection />
+        <ContactSection />
+        <Footer />
+      </div>
+    </ErrorBoundary>
   );
 }

@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import { useScrollSpy } from "../../hooks/useScrollSpy";
+import { Button } from "../ui/Button";
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -12,6 +14,7 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
   const navItems = ["about", "stats", "programs", "news", "gallery", "contact"];
   const [logoError, setLogoError] = useState(false);
+  const activeSection = useScrollSpy(navItems);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur">
@@ -33,7 +36,13 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
         <div className="hidden items-center gap-8 md:flex">
           <nav className="flex items-center gap-6 text-sm font-medium text-gray-700">
             {navItems.map((item) => (
-              <a key={item} href={`#${item}`} className="hover:text-blue-600 capitalize">
+              <a 
+                key={item} 
+                href={`#${item}`} 
+                className={`hover:text-blue-600 capitalize transition-colors ${
+                  activeSection === item ? 'text-blue-600 font-semibold' : ''
+                }`}
+              >
                 {item}
               </a>
             ))}
@@ -45,9 +54,9 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
             <a href="mailto:info@silverfin.ac.ug" className="flex items-center gap-2 text-sm text-gray-700">
               <Mail className="h-4 w-4" /> info@silverfin.ac.ug
             </a>
-            <a href="#contact" className="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700">
+            <Button size="sm" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Join Now
-            </a>
+            </Button>
           </div>
         </div>
 
@@ -62,7 +71,14 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
           <div className="mx-auto max-w-7xl px-4 py-4">
             <nav className="grid gap-4 text-sm font-medium">
               {navItems.map((id) => (
-                <a key={id} href={`#${id}`} className="py-1 capitalize" onClick={() => toggleMenu()}>
+                <a 
+                  key={id} 
+                  href={`#${id}`} 
+                  className={`py-1 capitalize transition-colors ${
+                    activeSection === id ? 'text-blue-600 font-semibold' : ''
+                  }`}
+                  onClick={() => toggleMenu()}
+                >
                   {id}
                 </a>
               ))}
@@ -74,9 +90,16 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
               <a href="mailto:info@silverfin.ac.ug" className="flex items-center gap-2">
                 <Mail className="h-4 w-4" /> info@silverfin.ac.ug
               </a>
-              <a href="#contact" className="mt-2 inline-flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 font-semibold text-white">
+              <Button 
+                size="sm" 
+                className="mt-2"
+                onClick={() => {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  toggleMenu();
+                }}
+              >
                 Join Now
-              </a>
+              </Button>
             </div>
           </div>
         </div>

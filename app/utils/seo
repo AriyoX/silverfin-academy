@@ -1,0 +1,37 @@
+interface SEOConfig {
+  title: string;
+  description: string;
+  keywords: string[];
+  ogImage?: string;
+  canonical?: string;
+}
+
+export const DEFAULT_SEO: SEOConfig = {
+  title: 'Silverfin Academy - Premier Swimming Club in Kampala, Uganda',
+  description: 'Join Silverfin Academy for world-class swimming training. From learn-to-swim to elite performance squads. Building champions in and out of the pool.',
+  keywords: [
+    'swimming club kampala',
+    'swimming lessons uganda',
+    'competitive swimming',
+    'learn to swim',
+    'swimming academy',
+    'aquatic training',
+    'swimming coach kampala'
+  ]
+};
+
+export function generateSEOTags(config: Partial<SEOConfig> = {}) {
+  const seo = { ...DEFAULT_SEO, ...config };
+  
+  return {
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords.join(', '),
+    openGraph: {
+      title: seo.title,
+      description: seo.description,
+      images: seo.ogImage ? [{ url: seo.ogImage }] : [],
+    },
+    canonical: seo.canonical
+  };
+}
