@@ -9,7 +9,10 @@ interface StatCardProps {
 export const StatCard: React.FC<StatCardProps> = ({ value, label, animate = false }) => {
   const [displayValue, setDisplayValue] = useState(animate ? "0" : value);
   const [isVisible, setIsVisible] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+  
+  const isBronzeMedal = value === "3rd";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -57,9 +60,28 @@ export const StatCard: React.FC<StatCardProps> = ({ value, label, animate = fals
   }, [animate, isVisible, value]);
 
   return (
-    <div ref={cardRef} className="rounded-2xl border border-secondary/20 p-4 sm:p-6 text-center shadow-sm bg-white">
-      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-primary break-words">{displayValue}</div>
-      <div className="mt-2 sm:mt-3 text-xs sm:text-sm md:text-base font-medium text-secondary break-words leading-tight">{label}</div>
+    <div 
+      ref={cardRef} 
+      className={`rounded-2xl border border-secondary/20 p-4 sm:p-6 text-center shadow-sm bg-white transition-all duration-300 ${
+        isBronzeMedal ? 'hover:bg-gradient-to-br hover:from-amber-100 hover:to-amber-200 hover:border-amber-300 hover:shadow-lg hover:scale-105 cursor-pointer' : ''
+      }`}
+      onMouseEnter={() => isBronzeMedal && setIsHovered(true)}
+      onMouseLeave={() => isBronzeMedal && setIsHovered(false)}
+    >
+      <div className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight break-words transition-all duration-300 ${
+        isBronzeMedal && isHovered 
+          ? 'text-amber-700 transform scale-110' 
+          : 'text-primary'
+      }`}>
+        {isBronzeMedal && isHovered ? '🥉' : displayValue}
+      </div>
+      <div className={`mt-2 sm:mt-3 text-xs sm:text-sm md:text-base font-medium break-words leading-tight transition-all duration-300 ${
+        isBronzeMedal && isHovered 
+          ? 'text-amber-800 font-semibold' 
+          : 'text-secondary'
+      }`}>
+        {label}
+      </div>
     </div>
   );
 };
