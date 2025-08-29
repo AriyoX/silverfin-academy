@@ -10,7 +10,7 @@ const stats = [
   { value: "8", label: "Coaches & Staff" },
   { value: "6", label: "Training Squads" },
   { value: "31", label: "Teams in Latest Organized Pentathlon" },
-  { value: "650", label: "Athletes Participated at Recent Pentathlon" }
+  { value: "650+", label: "Athletes Participated at Recent Pentathlon" }
 ];
 
 // External news articles and YouTube videos - add/edit these manually
@@ -47,7 +47,12 @@ export const StatsSection: React.FC = () => (
       <h3 className="mb-8 text-xl font-semibold text-primary text-center">Our Numbers</h3>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
         {stats.map((stat, index) => (
-          <StatCard key={index} value={stat.value} label={stat.label} />
+          <StatCard 
+            key={index} 
+            value={stat.value} 
+            label={stat.label} 
+            animate={stat.value !== "3rd"} 
+          />
         ))}
       </div>
     </div>
