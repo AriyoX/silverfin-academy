@@ -1,0 +1,64 @@
+import React from "react";
+import { Section } from "../ui/Section";
+import { ProgramCard } from "../ui/ProgramCard";
+
+const programs = [
+  {
+    title: "Learn to Swim",
+    desc: "Water confidence, safety, and foundational technique for beginners.",
+    meta: "Ages 4–10 • Weekdays"
+  },
+  {
+    title: "Development Squads",
+    desc: "Skill refinement and aerobic base with fun, progressive sets.",
+    meta: "Ages 9–14 • 4–6 sessions/week"
+  },
+  {
+    title: "Performance / Senior",
+    desc: "High‑performance training targeting national and international meets.",
+    meta: "Ages 13+ • 7–9 sessions/week"
+  }
+];
+
+export const ProgramsSection: React.FC = () => (
+  <Section id="programs">
+    <div className="mb-8 flex items-end justify-between gap-4">
+      <div>
+        <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">Programs</p>
+        <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Training Pathways</h2>
+      </div>
+      <a href="#contact" className="hidden rounded-full border border-gray-300 px-4 py-2 text-sm font-semibold hover:border-gray-400 md:inline-flex">
+        Book Assessment
+      </a>
+    </div>
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      {programs.map((program, index) => (
+        <ProgramCard key={index} {...program} />
+      ))}
+    </div>
+    <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div className="rounded-2xl border border-gray-200 p-6">
+        <h3 className="text-lg font-semibold">Our Coaches</h3>
+        <p className="mt-2 text-sm text-gray-600">
+          Experienced, accredited coaches dedicated to athlete wellbeing and long‑term development.
+        </p>
+        <ul className="mt-4 grid list-disc gap-2 pl-5 text-sm text-gray-700">
+          <li>Head Coach – Jane Doe</li>
+          <li>Junior Lead – John K.</li>
+          <li>S&C Coach – Alex M.</li>
+        </ul>
+      </div>
+      <div className="rounded-2xl border border-gray-200 p-6">
+        <h3 className="text-lg font-semibold">Facilities</h3>
+        <p className="mt-2 text-sm text-gray-600">
+          Access to 25m indoor pool, gym, and recovery area with planned upgrades.
+        </p>
+        <ul className="mt-4 grid list-disc gap-2 pl-5 text-sm text-gray-700">
+          <li>8‑lane 25m pool</li>
+          <li>Strength & Conditioning space</li>
+          <li>Video analysis</li>
+        </ul>
+      </div>
+    </div>
+  </Section>
+);
