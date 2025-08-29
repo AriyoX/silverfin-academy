@@ -20,7 +20,8 @@ const externalNews = [
     excerpt: "Our athletes delivered outstanding performances at the latest nationals swimming gala, ending 3rd despite the odds.",
     url: "https://www.monitor.co.ug/uganda/sports/other-sport/gators-in-fourth-heaven-5109816",
     source: "Daily Monitor",
-    date: "2025-07-07"
+    date: "2025-07-07",
+    imageUrl: "/thumbnails/monitor_thumbnail_1.webp"
   }
 ];
 
@@ -76,6 +77,7 @@ export const StatsSection: React.FC = () => (
               url={article.url}
               source={article.source}
               date={article.date}
+              imageUrl={article.imageUrl}
             />
           ))}
         </div>

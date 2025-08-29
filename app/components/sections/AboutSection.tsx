@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Section } from "../ui/Section";
 import { AnimatedSection } from "../ui/AnimatedSection";
 import { Phone } from "lucide-react";
@@ -42,8 +43,14 @@ export const AboutSection: React.FC = () => (
         </div>
       </AnimatedSection>
       <AnimatedSection animation="slideInRight" delay={300}>
-        <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl bg-secondary/10 border border-secondary/20">
-          <div className="flex h-full items-center justify-center text-secondary">About Image</div>
+        <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl bg-secondary/10 border border-secondary/20 relative">
+          <Image 
+            src="/about-images/about_1.jpg" 
+            alt="Silverfin Academy swimming team and facilities" 
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
         </div>
       </AnimatedSection>
     </div>

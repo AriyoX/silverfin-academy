@@ -5,28 +5,43 @@ import { AnimatedSection } from "../ui/AnimatedSection";
 const heroImages = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-    alt: "Olympic-sized swimming pool with crystal clear water"
+    url: "/hero-images/dubai_1.jpg",
+    alt: "Silverfin Academy swimmers in Dubai competition"
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80", 
-    alt: "Professional swimmers training in lanes"
+    url: "/hero-images/dubai_2.jpg", 
+    alt: "Dubai swimming championship event"
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1571019613540-0fcdd95d9b1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-    alt: "Swimming coach instructing young swimmers"
+    url: "/hero-images/dubai_3.jpg",
+    alt: "Team Dubai swimming competition"
   },
   {
     id: 4,
-    url: "https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-    alt: "Competitive swimming race in action"
+    url: "/hero-images/fun_day_1.jpg",
+    alt: "Silverfin Academy fun day activities"
   },
   {
     id: 5,
-    url: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-    alt: "Swimming team celebrating victory"
+    url: "/hero-images/nationals_1.jpg",
+    alt: "National swimming championship competition"
+  },
+  {
+    id: 6,
+    url: "/hero-images/rwanda_1.jpg",
+    alt: "Silverfin Academy team in Rwanda"
+  },
+  {
+    id: 7,
+    url: "/hero-images/rwanda_2.jpg",
+    alt: "Rwanda swimming competition event"
+  },
+  {
+    id: 8,
+    url: "/hero-images/rwanda_3.jpg",
+    alt: "Team Rwanda swimming championship"
   }
 ];
 
