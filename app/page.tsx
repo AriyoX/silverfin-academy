@@ -19,7 +19,7 @@ export default function Page() {
 
   return (
     <ErrorBoundary>
-      <div className="min-h-screen scroll-smooth bg-white text-gray-900">
+      <div className="min-h-screen scroll-smooth bg-white text-gray-900 overflow-x-hidden w-full">
         <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
         <HeroSection />
         <AboutSection />

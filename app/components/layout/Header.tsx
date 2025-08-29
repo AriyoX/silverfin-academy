@@ -21,20 +21,20 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
   const [logoError, setLogoError] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-secondary/20 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 md:py-5">
-        <div className="flex items-center gap-3">
+    <header className="sticky top-0 z-50 w-full border-b border-secondary/20 bg-white/95 backdrop-blur overflow-x-hidden">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 md:py-5 min-w-0">
+        <div className="flex items-center gap-3 min-w-0 flex-shrink-0">
           {!logoError && (
             <Image
               src="/logo.png"
               alt="Silverfin Academy"
               width={40}
               height={40}
-              className="rounded-full bg-gray-100 object-cover"
+              className="rounded-full bg-gray-100 object-cover flex-shrink-0"
               onError={() => setLogoError(true)}
             />
           )}
-          <span className="text-xl font-bold tracking-tight text-primary">Silverfin Academy</span>
+          <span className="text-lg sm:text-xl font-bold tracking-tight text-primary truncate">Silverfin Academy</span>
         </div>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -69,14 +69,14 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
       
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="border-t border-secondary/20 bg-white md:hidden">
-          <div className="mx-auto max-w-7xl px-4 py-5">
+        <div className="border-t border-secondary/20 bg-white md:hidden overflow-x-hidden">
+          <div className="mx-auto max-w-7xl px-4 py-5 w-full">
             <nav className="grid gap-4 text-base font-medium">
               {navItems.map((item) => (
                 <a 
                   key={item.label} 
                   href={item.href} 
-                  className="py-1 transition-colors hover:text-primary text-secondary"
+                  className="py-1 transition-colors hover:text-primary text-secondary block"
                   onClick={() => toggleMenu()}
                 >
                   {item.label}
@@ -84,15 +84,15 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
               ))}
             </nav>
             <div className="mt-4 grid gap-3 text-sm">
-              <a href="tel:+256700000000" className="flex items-center gap-2 text-secondary">
-                <Phone className="h-4 w-4 text-primary" /> +256 700 000 000
+              <a href="tel:+256700000000" className="flex items-center gap-2 text-secondary break-all">
+                <Phone className="h-4 w-4 text-primary flex-shrink-0" /> +256 700 000 000
               </a>
-              <a href="mailto:info@silverfin.ac.ug" className="flex items-center gap-2 text-secondary">
-                <Mail className="h-4 w-4 text-primary" /> info@silverfin.ac.ug
+              <a href="mailto:info@silverfin.ac.ug" className="flex items-center gap-2 text-secondary break-all">
+                <Mail className="h-4 w-4 text-primary flex-shrink-0" /> info@silverfin.ac.ug
               </a>
               <Button 
                 size="sm" 
-                className="mt-2"
+                className="mt-2 w-full"
                 onClick={() => {
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                   toggleMenu();
