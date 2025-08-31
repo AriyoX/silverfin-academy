@@ -1,8 +1,6 @@
 "use client"
-
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "../ui/Button";
 import { Logo } from "../ui/Logo";
 import { DesktopNav } from "./DesktopNav";
 import { MobileMenu } from "./MobileMenu";
@@ -14,6 +12,19 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Handle scroll effects for better stickiness visual feedback
+  useEffect(() => {
+    const handleScroll = () => {
+      // Adjust threshold to account for contact bar height (~32px)
+      setIsScrolled(window.scrollY > 32);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   // Handle body scroll lock when menu is open
   useEffect(() => {
     if (isMenuOpen) {
@@ -37,21 +48,43 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
   }, [isMenuOpen, toggleMenu]);
 
   return (
-    <>
-      {/* Optional: Slim contact bar at the very top */}
+    <div className="w-full">
+      {/* Non-sticky contact bar */}
       <ContactBar />
       
-      <header className="sticky top-0 z-50 w-full border-b border-secondary/20 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 md:py-5">
-          <Logo size="lg" textClassName="text-primary" />
+      {/* Sticky header - now properly isolated */}
+      <header
+        className={`
+          sticky top-0 z-50 w-full transition-all duration-300
+          ${isScrolled
+            ? 'bg-white shadow-lg border-b border-secondary/30'
+            : 'bg-white/95 border-b border-secondary/20'
+          }
+        `}
+        style={{
+          position: 'sticky',
+          top: 0,
+          zIndex: 50,
+          transform: 'translateZ(0)', // Good for performance
+          backfaceVisibility: 'hidden', // Additional performance optimization
+          willChange: 'transform' // Hint for browser optimization
+        }}
+      >
+        <div className={`
+          mx-auto flex max-w-7xl items-center justify-between px-4 md:px-6
+          transition-all duration-300
+          ${isScrolled ? 'py-3 md:py-4' : 'py-4 md:py-5'}
+        `}>
+          <Logo
+            size={isScrolled ? "md" : "lg"}
+            textClassName="text-primary transition-all duration-300"
+          />
 
-          {/* Desktop Navigation */}
           <DesktopNav />
 
-          {/* Mobile Menu Toggle */}
-          <button 
-            className="md:hidden text-primary hover:bg-gray-100 rounded-md p-2 transition-colors" 
-            onClick={toggleMenu} 
+          <button
+            className="md:hidden text-primary hover:bg-gray-100 rounded-md p-2 transition-colors"
+            onClick={toggleMenu}
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
@@ -60,8 +93,8 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
         </div>
       </header>
 
-      {/* Mobile Menu */}
+      {/* Mobile menu */}
       <MobileMenu isOpen={isMenuOpen} onClose={toggleMenu} />
-    </>
+    </div>
   );
 };
