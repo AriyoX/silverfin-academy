@@ -1,9 +1,12 @@
 "use client"
 
-import React from "react";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Logo } from "../ui/Logo";
+import { DesktopNav } from "./DesktopNav";
+import { MobileMenu } from "./MobileMenu";
+import { ContactBar } from "./ContactBar";
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -11,86 +14,54 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
-  const navItems = [
-    { label: "About", href: "/about" },
-    { label: "Programs", href: "/programs" },
-    { label: "News", href: "/news" },
-    { label: "Gallery", href: "/gallery" },
-    { label: "Contact", href: "/contact" }
-  ];
+  // Handle body scroll lock when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+
+    const handleEscapeKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && isMenuOpen) {
+        toggleMenu();
+      }
+    };
+
+    document.addEventListener('keydown', handleEscapeKey);
+
+    return () => {
+      document.body.classList.remove('menu-open');
+      document.removeEventListener('keydown', handleEscapeKey);
+    };
+  }, [isMenuOpen, toggleMenu]);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-secondary/20 bg-white/95 backdrop-blur overflow-x-hidden">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 md:py-5 min-w-0">
-        <Logo size="lg" textClassName="text-primary" />
-
-        <div className="hidden items-center gap-8 md:flex">
-          <nav className="flex items-center gap-6 text-base font-medium text-secondary">
-            {navItems.map((item) => (
-              <a 
-                key={item.label} 
-                href={item.href} 
-                className="hover:text-primary transition-colors"
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-          <div className="hidden items-center gap-5 lg:flex">
-            <a href="tel:+256700000000" className="flex items-center gap-2 text-sm text-secondary">
-              <Phone className="h-4 w-4 text-primary" /> +256 709 711 797
-            </a>
-            <a href="mailto:silverfinacademy@gmail.com" className="flex items-center gap-2 text-sm text-secondary">
-              <Mail className="h-4 w-4 text-primary" /> silverfinacademy@gmail.com
-            </a>
-            <Button size="sm" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-              Join Now
-            </Button>
-          </div>
-        </div>
-
-        <button className="md:hidden text-primary" onClick={toggleMenu} aria-label="Toggle menu">
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
-      </div>
+    <>
+      {/* Optional: Slim contact bar at the very top */}
+      <ContactBar />
       
-      {/* Mobile menu */}
-      {isMenuOpen && (
-        <div className="border-t border-secondary/20 bg-white md:hidden overflow-x-hidden">
-          <div className="mx-auto max-w-7xl px-4 py-5 w-full">
-            <nav className="grid gap-4 text-base font-medium">
-              {navItems.map((item) => (
-                <a 
-                  key={item.label} 
-                  href={item.href} 
-                  className="py-1 transition-colors hover:text-primary text-secondary block"
-                  onClick={() => toggleMenu()}
-                >
-                  {item.label}
-                </a>
-              ))}
-            </nav>
-            <div className="mt-4 grid gap-3 text-sm">
-              <a href="tel:+256700000000" className="flex items-center gap-2 text-secondary break-all">
-                <Phone className="h-4 w-4 text-primary flex-shrink-0" /> +256 700 000 000
-              </a>
-              <a href="mailto:info@silverfin.ac.ug" className="flex items-center gap-2 text-secondary break-all">
-                <Mail className="h-4 w-4 text-primary flex-shrink-0" /> info@silverfin.ac.ug
-              </a>
-              <Button 
-                size="sm" 
-                className="mt-2 w-full"
-                onClick={() => {
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                  toggleMenu();
-                }}
-              >
-                Join Now
-              </Button>
-            </div>
-          </div>
+      <header className="sticky top-0 z-50 w-full border-b border-secondary/20 bg-white/95 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 md:py-5">
+          <Logo size="lg" textClassName="text-primary" />
+
+          {/* Desktop Navigation */}
+          <DesktopNav />
+
+          {/* Mobile Menu Toggle */}
+          <button 
+            className="md:hidden text-primary hover:bg-gray-100 rounded-md p-2 transition-colors" 
+            onClick={toggleMenu} 
+            aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
-      )}
-    </header>
+      </header>
+
+      {/* Mobile Menu */}
+      <MobileMenu isOpen={isMenuOpen} onClose={toggleMenu} />
+    </>
   );
 };
