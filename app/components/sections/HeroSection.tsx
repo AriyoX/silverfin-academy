@@ -2,48 +2,85 @@ import React, { useState, useEffect } from "react";
 import { Button } from "../ui/Button";
 import { AnimatedSection } from "../ui/AnimatedSection";
 
-const heroImages = [
+// Randomize the order of hero images on each page load
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
+const baseHeroImages = [
   {
     id: 1,
-    url: "/hero-images/dubai_1.jpg",
-    alt: "Silverfin Academy swimmers in Dubai competition"
+    url: "/hero-images/swimmer_1.jpg",
+    alt: "Silverfin Academy swimmer performing butterfly stroke in competition pool"
   },
   {
     id: 2,
-    url: "/hero-images/dubai_2.jpg", 
-    alt: "Dubai swimming championship event"
+    url: "/hero-images/dubai_1.jpg", 
+    alt: "Silverfin Academy team at Dubai International Swimming Championship"
   },
   {
     id: 3,
-    url: "/hero-images/dubai_3.jpg",
-    alt: "Team Dubai swimming competition"
+    url: "/hero-images/pentathlon_1.jpg",
+    alt: "Young swimmer preparing for pentathlon event at swimming competition"
   },
   {
     id: 4,
-    url: "/hero-images/fun_day_1.jpg",
-    alt: "Silverfin Academy fun day activities"
+    url: "/hero-images/nationals_1.jpg",
+    alt: "Silverfin Academy athletes competing at National Swimming Championships"
   },
   {
     id: 5,
-    url: "/hero-images/nationals_1.jpg",
-    alt: "National swimming championship competition"
+    url: "/hero-images/swimmer_2.jpg",
+    alt: "Professional swimmer executing perfect freestyle technique in training"
   },
   {
     id: 6,
-    url: "/hero-images/rwanda_1.jpg",
-    alt: "Silverfin Academy team in Rwanda"
+    url: "/hero-images/parents_1.jpg",
+    alt: "Parents and families supporting young swimmers at Silverfin Academy event"
   },
   {
     id: 7,
-    url: "/hero-images/rwanda_2.jpg",
-    alt: "Rwanda swimming competition event"
+    url: "/hero-images/dubai_2.jpg",
+    alt: "Swimming pool venue during Dubai Championship with lane dividers and starting blocks"
   },
   {
     id: 8,
-    url: "/hero-images/rwanda_3.jpg",
-    alt: "Team Rwanda swimming championship"
+    url: "/hero-images/swimmer_3.jpg",
+    alt: "Elite swimmer demonstrating backstroke technique during training session"
+  },
+  {
+    id: 9,
+    url: "/hero-images/pentathlon_2.jpg",
+    alt: "Multi-event swimming competition featuring various strokes and distances"
+  },
+  {
+    id: 10,
+    url: "/hero-images/parents_2.jpg",
+    alt: "Community gathering of swimming families at Silverfin Academy celebration"
+  },
+  {
+    id: 11,
+    url: "/hero-images/swimmer_4.jpg",
+    alt: "Competitive swimmer in racing position ready to dive from starting block"
+  },
+  {
+    id: 12,
+    url: "/hero-images/dubai_3.jpg",
+    alt: "International swimming competition venue in Dubai with spectators and athletes"
+  },
+  {
+    id: 13,
+    url: "/hero-images/parents_3.jpg",
+    alt: "Family support network celebrating achievements at swimming championship"
   }
 ];
+
+const heroImages = shuffleArray(baseHeroImages);
 
 export const HeroSection: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

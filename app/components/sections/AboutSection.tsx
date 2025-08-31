@@ -45,7 +45,7 @@ export const AboutSection: React.FC = () => (
       <AnimatedSection animation="slideInRight" delay={300}>
         <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl bg-secondary/10 border border-secondary/20 relative">
           <Image 
-            src="/about-images/about_1.jpg" 
+            src="/about-images/group.jpg" 
             alt="Silverfin Academy swimming team and facilities" 
             fill
             className="object-cover"
