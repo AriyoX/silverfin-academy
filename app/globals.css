@@ -15,7 +15,7 @@
 }
 
 html {
-  overflow-x: hidden;
+
   width: 100%;
 }
 
@@ -23,10 +23,34 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  /* Force hardware acceleration for smoother scrolling */
+  transform: translateZ(0);
+  will-change: transform;
+  /* Prevent layout shifts */
+  contain: layout;
+}
+
+/* Prevent body scroll when menu is open */
+.menu-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+/* Smooth backdrop blur transitions */
+.backdrop-blur-enhanced {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 /* Custom utility classes for the theme */
