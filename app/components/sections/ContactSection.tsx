@@ -16,8 +16,8 @@ export const ContactSection: React.FC = () => (
           </div>
           <div className="mt-8 grid gap-3 text-sm text-secondary">
             <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +256 700 000 000</div>
-            <div className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> info@silverfin.ac.ug</div>
-            <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Silverfin Aquatic Centre, Kampala, Uganda</div>
+            <div className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> silverfinacademy@gmail.com</div>
+            <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" />Hill Preparatory School, Naguru, Kampala</div>
             <div className="mt-2 flex items-center gap-4">
               <a href="#" aria-label="Instagram" className="rounded-full border border-primary/30 p-2 text-primary hover:border-primary hover:bg-primary hover:text-white transition-all">
                 <Instagram className="h-4 w-4" />

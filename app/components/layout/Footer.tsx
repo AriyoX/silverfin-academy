@@ -13,9 +13,9 @@ export const Footer: React.FC = () => (
         <div className="min-w-0">
           <h4 className="text-sm font-semibold text-white">Contact</h4>
           <ul className="mt-3 space-y-2 text-sm text-white/80">
-            <li className="flex items-center gap-2 break-all"><Phone className="h-4 w-4 flex-shrink-0" /> +256 700 000 000</li>
-            <li className="flex items-center gap-2 break-all"><Mail className="h-4 w-4 flex-shrink-0" /> info@silverfinacademy.org</li>
-            <li className="flex items-center gap-2 break-words"><MapPin className="h-4 w-4 flex-shrink-0" /> Hill Preparatry School, Kampala</li>
+            <li className="flex items-center gap-2 break-all"><Phone className="h-4 w-4 flex-shrink-0" /> +256 709 711 797</li>
+            <li className="flex items-center gap-2 break-all"><Mail className="h-4 w-4 flex-shrink-0" /> silverfinacademy@gmail.com</li>
+            <li className="flex items-center gap-2 break-words"><MapPin className="h-4 w-4 flex-shrink-0" /> Hill Preparatry School, Naguru, Kampala</li>
           </ul>
         </div>
         <div className="min-w-0">

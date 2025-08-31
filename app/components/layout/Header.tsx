@@ -38,10 +38,10 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
           </nav>
           <div className="hidden items-center gap-5 lg:flex">
             <a href="tel:+256700000000" className="flex items-center gap-2 text-sm text-secondary">
-              <Phone className="h-4 w-4 text-primary" /> +256 700 000 000
+              <Phone className="h-4 w-4 text-primary" /> +256 709 711 797
             </a>
-            <a href="mailto:info@silverfinacademy.org" className="flex items-center gap-2 text-sm text-secondary">
-              <Mail className="h-4 w-4 text-primary" /> info@silverfinacademy.org
+            <a href="mailto:silverfinacademy@gmail.com" className="flex items-center gap-2 text-sm text-secondary">
+              <Mail className="h-4 w-4 text-primary" /> silverfinacademy@gmail.com
             </a>
             <Button size="sm" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Join Now
