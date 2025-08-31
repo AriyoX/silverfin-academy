@@ -1,6 +1,7 @@
 import React from "react";
 import { Section } from "../ui/Section";
 import { ArticleCard } from "../ui/ArticleCard";
+import { Button } from "../ui/Button";
 
 export const NewsSection: React.FC = () => (
   <Section id="news" className="bg-secondary/5">
@@ -18,9 +19,9 @@ export const NewsSection: React.FC = () => (
       <ArticleCard />
     </div>
     <div className="mt-8 text-center">
-      <a href="#" className="inline-flex items-center gap-2 rounded-full border border-primary px-4 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition-all">
+      <Button variant="outline" size="md" className="gap-2">
         View all club news
-      </a>
+      </Button>
     </div>
   </Section>
 );

@@ -94,6 +94,23 @@ body {
   color: var(--secondary);
 }
 
+/* Focus and active states for better visibility */
+.focus\:bg-primary:focus {
+  background-color: var(--primary);
+}
+
+.focus\:text-white:focus {
+  color: white;
+}
+
+.active\:bg-primary:active {
+  background-color: var(--primary);
+}
+
+.active\:text-white:active {
+  color: white;
+}
+
 /* Additional subtle background variations */
 .bg-primary\/3 {
   background-color: rgb(23 35 108 / 0.03);

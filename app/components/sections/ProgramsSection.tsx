@@ -1,6 +1,7 @@
 import React from "react";
 import { Section } from "../ui/Section";
 import { ProgramCard } from "../ui/ProgramCard";
+import { Button } from "../ui/Button";
 
 const programs = [
   {
@@ -27,9 +28,14 @@ export const ProgramsSection: React.FC = () => (
         <p className="text-sm font-semibold uppercase tracking-wider text-primary">Programs</p>
         <h2 className="mt-2 text-3xl font-bold tracking-tight text-primary md:text-4xl">Training Pathways</h2>
       </div>
-      <a href="#contact" className="hidden rounded-full border border-primary px-4 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition-all md:inline-flex">
+      <Button 
+        variant="outline" 
+        size="sm" 
+        className="hidden md:inline-flex"
+        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+      >
         Book Assessment
-      </a>
+      </Button>
     </div>
     <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
       {programs.map((program, index) => (
