@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Logo } from "../ui/Logo";
 import { DesktopNav } from "./DesktopNav";
@@ -75,10 +76,12 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
           transition-all duration-300
           ${isScrolled ? 'py-3 md:py-4' : 'py-4 md:py-5'}
         `}>
-          <Logo
-            size={isScrolled ? "md" : "lg"}
-            textClassName="text-primary transition-all duration-300"
-          />
+          <Link href="/" className="flex-shrink-0">
+            <Logo
+              size={isScrolled ? "md" : "lg"}
+              textClassName="text-primary transition-all duration-300"
+            />
+          </Link>
 
           <DesktopNav />
 

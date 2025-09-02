@@ -51,25 +51,32 @@ export const PROGRAMS: Program[] = [
 
 export const COACHES: Coach[] = [
   {
-    id: 'jane-doe',
-    name: 'Jane Doe',
+    id: 'ezra-kakali',
+    name: 'Ezra Kakali',
     title: 'Head Coach',
-    bio: 'Former national team swimmer with 15+ years coaching experience',
-    certifications: ['Level 4 Swimming Coach', 'Strength & Conditioning']
+    bio: 'Former national team swimmer with 15+ years coaching experience leading Silverfin to regional excellence',
+    certifications: ['Level 4 Swimming Coach', 'Strength & Conditioning', 'Water Safety Instructor']
   },
   {
-    id: 'john-k',
-    name: 'John K.',
-    title: 'Junior Lead',
-    bio: 'Specialist in youth development and technique refinement',
-    certifications: ['Level 3 Swimming Coach', 'Child Protection']
+    id: 'vincent-kabira',
+    name: 'Vincent Kabira',
+    title: 'Assistant Head Coach',
+    bio: 'Specialist in competitive swimming development with expertise in stroke technique and race strategy',
+    certifications: ['Level 3 Swimming Coach', 'Technical Official', 'Child Protection']
   },
   {
-    id: 'alex-m',
-    name: 'Alex M.',
-    title: 'S&C Coach',
-    bio: 'Sports science graduate focused on athlete conditioning',
-    certifications: ['NSCA-CSCS', 'Sports Nutrition']
+    id: 'mugisha-jacob',
+    name: 'Mugisha Jacob',
+    title: 'Learn to Swim (Adults)',
+    bio: 'Dedicated adult swimming instructor with a passion for helping beginners overcome water fears',
+    certifications: ['Adult Swimming Instructor', 'Water Safety', 'First Aid/CPR']
+  },
+  {
+    id: 'nancy-akukwatswe',
+    name: 'Nancy Akukwatswe',
+    title: 'Learn to Swim II',
+    bio: 'Patient and encouraging instructor specializing in foundational swimming skills for all ages',
+    certifications: ['Swimming Instructor Level 2', 'Child Development', 'Water Confidence']
   }
 ];
 

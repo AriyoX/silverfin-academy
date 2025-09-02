@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from 'react';
 
 export function useScrollSpy(sectionIds: string[], offset: number = 100) {
