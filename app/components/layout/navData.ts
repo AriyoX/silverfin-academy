@@ -15,7 +15,6 @@ export const navItems = [
       { label: "Competitions", href: "/news/competitions" },
     ]
   },
-  { label: "Gallery", href: "/gallery" },
   { label: "Events", href: "/events" },
   { label: "Coaches", href: "/coaches" },
   { label: "Membership", href: "/membership" },
