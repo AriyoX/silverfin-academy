@@ -40,8 +40,11 @@ export interface Coach {
   name: string;
   title: string;
   bio?: string;
+  quote?: string;
+  background?: string;
   imageUrl?: string;
   certifications?: string[];
+  email?: string;
 }
 
 export interface Facility {
