@@ -1,6 +1,7 @@
 import React from "react";
 import { Section } from "../../components/ui/Section";
 import { AnimatedSection } from "../../components/ui/AnimatedSection";
+import { Button } from "../../components/ui/Button";
 import { CLUB_STATS } from "../../constants";
 import { Trophy, Medal, Star, Calendar, Plane, Users } from "lucide-react";
 
@@ -104,22 +105,31 @@ export const AboutAchievementsSection: React.FC = () => (
       From your first stroke to international competitions – we&apos;ll guide you every step of the way.
     </p>
     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-      <button className="group px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 shadow-lg">
+      <Button 
+        size="xl"
+        className="w-full sm:w-auto"
+        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+      >
         <span className="flex items-center justify-center gap-2">
           Start Your Journey
           <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
         </span>
-      </button>
-      <button className="group px-8 py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105">
+      </Button>
+      <Button 
+        variant="outline"
+        size="xl"
+        className="w-full sm:w-auto"
+        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+      >
         <span className="flex items-center justify-center gap-2">
           Schedule a Trial
           <svg className="w-4 h-4 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
         </span>
-      </button>
+      </Button>
     </div>
     <div className="text-center bg-slate-50 rounded-lg p-6 max-w-lg mx-auto">
       <p className="text-secondary text-base italic">

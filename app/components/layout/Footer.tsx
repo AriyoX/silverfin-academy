@@ -26,9 +26,9 @@ export const Footer: React.FC = () => (
         <div className="min-w-0">
           <h4 className="text-sm font-semibold text-white mb-3">Programs</h4>
           <ul className="space-y-2 text-sm text-white/80">
-            <li><Link href="/programs/beginners" className="hover:text-white transition-colors">Beginners</Link></li>
-            <li><Link href="/programs/intermediate" className="hover:text-white transition-colors">Intermediate</Link></li>
-            <li><Link href="/programs/advanced" className="hover:text-white transition-colors">Advanced</Link></li>
+            <li><Link href="/programs/learn-to-swim" className="hover:text-white transition-colors">Learn to Swim</Link></li>
+            <li><Link href="/programs/development" className="hover:text-white transition-colors">Development Squads</Link></li>
+            <li><Link href="/programs/performance" className="hover:text-white transition-colors">Performance / Senior</Link></li>
             <li><Link href="/membership" className="hover:text-white transition-colors">Membership</Link></li>
             <li><Link href="/events" className="hover:text-white transition-colors">Events</Link></li>
           </ul>

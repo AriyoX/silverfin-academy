@@ -3,9 +3,9 @@ export const navItems = [
   { 
     label: "Programs", 
     dropdown: [
-      { label: "Beginners", href: "/programs/beginners" },
-      { label: "Intermediate", href: "/programs/intermediate" },
-      { label: "Advanced", href: "/programs/advanced" },
+      { label: "Learn to Swim", href: "/programs/learn-to-swim" },
+      { label: "Development Squads", href: "/programs/development" },
+      { label: "Performance / Senior", href: "/programs/performance" },
     ]
   },
   { 
