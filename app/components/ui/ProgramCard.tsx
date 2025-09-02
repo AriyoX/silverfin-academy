@@ -16,7 +16,7 @@ export const ProgramCard: React.FC<ProgramCardProps> = ({ title, desc, meta }) =
     <div className="mt-6 flex items-center justify-between text-sm text-secondary">
       <span>{meta}</span>
       <a className="inline-flex items-center gap-1 font-medium text-primary hover:underline" href="#contact">
-        Enquire <ArrowRight className="h-4 w-4" />
+        Learn More <ArrowRight className="h-4 w-4" />
       </a>
     </div>
   </div>
