@@ -37,11 +37,11 @@ export default function CoachesPage() {
           <div className="text-center mb-16">
             <AnimatedSection animation="fadeIn" delay={0}>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Leadership Team
+                Head Coaches
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Meet our head coaching staff who lead Silverfin Academy with experience, 
-                passion, and dedication to excellence.
+                Our head coaches provide program vision, mentor the wider coaching team, and
+                drive performance standards across every lane at Silverfin Academy.
               </p>
             </AnimatedSection>
           </div>
@@ -71,11 +71,12 @@ export default function CoachesPage() {
             <div className="text-center mb-16">
               <AnimatedSection animation="fadeIn" delay={0}>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                  Our Teaching Staff
+                  Coaching Team
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Specialized instructors dedicated to creating safe, fun, and effective 
-                  learning experiences for swimmers of all ages and abilities.
+                  Fully qualified coaches who deliver day‑to‑day training, skill development,
+                  and positive swimmer experiences across every stage—from first lessons to
+                  competitive performance.
                 </p>
               </AnimatedSection>
             </div>
@@ -116,11 +117,11 @@ export default function CoachesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <AnimatedSection animation="fadeIn" delay={200}>
-                <div className="text-center bg-white rounded-xl p-6 shadow-lg">
+                <div className="text-center bg-white rounded-xl p-6 shadow-lg h-full flex flex-col">
                   <h3 className="text-lg font-semibold text-primary mb-3">
                     Technical Excellence
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 text-sm flex-grow">
                     Regular workshops on stroke analysis, biomechanics, and performance optimization 
                     ensure our coaching methods remain cutting-edge.
                   </p>
@@ -128,11 +129,11 @@ export default function CoachesPage() {
               </AnimatedSection>
 
               <AnimatedSection animation="fadeIn" delay={300}>
-                <div className="text-center bg-white rounded-xl p-6 shadow-lg">
+                <div className="text-center bg-white rounded-xl p-6 shadow-lg h-full flex flex-col">
                   <h3 className="text-lg font-semibold text-primary mb-3">
                     Safety Certification
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 text-sm flex-grow">
                     All coaches maintain current CPR, First Aid, and Water Safety certifications, 
                     with mandatory annual refresher training.
                   </p>
@@ -140,11 +141,11 @@ export default function CoachesPage() {
               </AnimatedSection>
 
               <AnimatedSection animation="fadeIn" delay={400}>
-                <div className="text-center bg-white rounded-xl p-6 shadow-lg">
+                <div className="text-center bg-white rounded-xl p-6 shadow-lg h-full flex flex-col">
                   <h3 className="text-lg font-semibold text-primary mb-3">
                     Athlete Psychology
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 text-sm flex-grow">
                     Training in sports psychology and mental performance helps our coaches 
                     develop confident, resilient athletes both in and out of the pool.
                   </p>

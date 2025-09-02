@@ -25,7 +25,7 @@ export const CoachesHeroSection: React.FC = () => (
           Our Coaches
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-white/95 [text-shadow:_1px_1px_4px_rgb(0_0_0_/_70%)] font-medium">
-          Expert Guidance, Passionate Teaching, Proven Results
+          Unified Coaching. Individual Progress. Lasting Results.
         </p>
         <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/90 mb-8 [text-shadow:_1px_1px_3px_rgb(0_0_0_/_60%)]">
           Meet our dedicated team of certified professionals who bring decades of experience 

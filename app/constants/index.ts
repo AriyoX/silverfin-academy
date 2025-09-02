@@ -1,9 +1,9 @@
 import { ContactInfo, SocialMedia, Stat, Program, Coach, Facility } from '../types';
 
 export const CONTACT_INFO: ContactInfo = {
-  phone: '+256 700 000 000',
-  email: 'info@silverfin.ac.ug',
-  address: 'Silverfin Aquatic Centre, Kampala, Uganda'
+  phone: '+256 709 711 797',
+  email: 'silverfinacademy@gmail.com',
+  address: 'Hill Preparatory School, Naguru, Kampala'
 };
 
 export const SOCIAL_MEDIA: SocialMedia = {
@@ -54,7 +54,7 @@ export const COACHES: Coach[] = [
     id: 'ezra-kakali',
     name: 'Ezra Kakali',
     title: 'Head Coach',
-    imageUrl: '/coaches/ezra-kakali.jpg',
+    imageUrl: '/hero-images/swimmer_1.jpg',
     bio: 'Former national team swimmer with 15+ years coaching experience leading Silverfin to regional excellence. Ezra represented Uganda at the Commonwealth Games and African Championships before transitioning to coaching. His technical expertise and leadership have transformed countless swimmers into champions.',
     quote: "Excellence is not a destination, it's a journey. Every stroke, every training session, every competition is an opportunity to become better than you were yesterday.",
     background: 'Swimming Career: Competed internationally for Uganda (2005-2012)\nCoaching Experience: 15+ years developing athletes from beginner to elite level\nEducation: Sports Science degree, University of Makerere\nAchievements: Led 50+ swimmers to national championships, developed 12 African Championship medalists',
@@ -71,7 +71,7 @@ export const COACHES: Coach[] = [
     id: 'vincent-kabira',
     name: 'Vincent Kabira',
     title: 'Assistant Head Coach',
-    imageUrl: '/coaches/vincent-kabira.jpg',
+    imageUrl: '/hero-images/swimmer_1.jpg',
     bio: 'Specialist in competitive swimming development with expertise in stroke technique and race strategy. Vincent focuses on developing proper fundamentals and building competitive confidence in swimmers of all levels.',
     quote: "Technique is the foundation of speed. Perfect practice makes perfect performance, and every swimmer has the potential to achieve greatness with the right guidance.",
     background: 'Swimming Career: Former national age-group record holder\nCoaching Experience: 8+ years specializing in technique development\nEducation: Physical Education degree, Kyambogo University\nSpecialization: Stroke biomechanics and race preparation',
@@ -88,7 +88,7 @@ export const COACHES: Coach[] = [
     id: 'mugisha-jacob',
     name: 'Mugisha Jacob',
     title: 'Learn to Swim Coach (Adults)',
-    imageUrl: '/coaches/mugisha-jacob.jpg',
+    imageUrl: '/hero-images/swimmer_1.jpg',
     bio: 'Dedicated adult swimming instructor with a passion for helping beginners overcome water fears and develop confidence in the water. Jacob specializes in working with adult learners who are taking up swimming later in life.',
     background: 'Teaching Experience: 6+ years specializing in adult education\nEducation: Certificate in Adult Education, YMCA\nSpecialization: Water confidence and fear management\nSuccess Rate: 95% of students achieve basic swimming competency',
     certifications: [
@@ -103,7 +103,7 @@ export const COACHES: Coach[] = [
     id: 'nancy-akukwatswe',
     name: 'Nancy Akukwatswe',
     title: 'Learn to Swim Coach (Children)',
-    imageUrl: '/coaches/nancy-akukwatswe.jpg',
+    imageUrl: '/hero-images/swimmer_1.jpg',
     bio: 'Patient and encouraging instructor specializing in foundational swimming skills for children aged 4-12. Nancy creates a fun, safe environment where young swimmers can develop both skills and confidence.',
     background: 'Teaching Experience: 7+ years in pediatric aquatic education\nEducation: Early Childhood Development Certificate\nSpecialization: Child psychology and motor skill development\nAchievements: Taught over 500 children to swim safely',
     certifications: [
