@@ -29,7 +29,7 @@ export const Footer: React.FC = () => (
             <li><Link href="/programs/learn-to-swim" className="hover:text-white transition-colors">Learn to Swim</Link></li>
             <li><Link href="/programs/development" className="hover:text-white transition-colors">Development Squads</Link></li>
             <li><Link href="/programs/performance" className="hover:text-white transition-colors">Performance / Senior</Link></li>
-            <li><Link href="/membership" className="hover:text-white transition-colors">Membership</Link></li>
+            <li><Link href="/swimmers" className="hover:text-white transition-colors">Swimmers</Link></li>
             <li><Link href="/events" className="hover:text-white transition-colors">Events</Link></li>
           </ul>
         </div>

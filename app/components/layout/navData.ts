@@ -17,6 +17,6 @@ export const navItems = [
   },
   { label: "Events", href: "/events" },
   { label: "Coaches", href: "/coaches" },
-  { label: "Membership", href: "/membership" },
+  { label: "Swimmers", href: "/swimmers" },
   { label: "Contact", href: "/contact" }
 ];
