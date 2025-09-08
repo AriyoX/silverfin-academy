@@ -7,8 +7,7 @@ import { ErrorBoundary } from '../components/ui/ErrorBoundary';
 import { ContactSection } from '../components/sections/ContactSection';
 import { Section } from '../components/ui/Section';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
-import { Button } from '../components/ui/Button';
-import { SquadSection } from './components';
+import { SquadSection, SwimmersHeroSection } from './components';
 import { SWIMMERS } from '../constants';
 
 const SwimmersPage: React.FC = () => {
@@ -28,20 +27,7 @@ const SwimmersPage: React.FC = () => {
         
         <div className="min-h-screen">
           {/* Hero Section */}
-          <Section className="bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-white py-24">
-            <div className="text-center">
-              <AnimatedSection animation="fadeIn">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                  Our Swimmers
-                </h1>
-                <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto mb-8">
-                  Meet the talented athletes who make Silverfin Academy a center of swimming excellence. 
-                  From beginners taking their first strokes to elite performers competing internationally.
-                </p>
-              
-              </AnimatedSection>
-            </div>
-          </Section>
+          <SwimmersHeroSection />
           
           <Section id="training-squads" className="bg-gray-50 py-16">
             <div className="text-center mb-12">
