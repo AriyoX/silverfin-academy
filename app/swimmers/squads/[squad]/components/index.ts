@@ -1,0 +1,1 @@
+export { SquadPageContent } from './SquadPageContent';

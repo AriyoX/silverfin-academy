@@ -52,3 +52,39 @@ export interface Facility {
   description: string;
   features: string[];
 }
+
+export interface SwimmerTime {
+  event: string;
+  time: string;
+  date: string;
+  venue?: string;
+}
+
+export interface Gala {
+  id: string;
+  name: string;
+  date: string;
+  venue: string;
+  events: string[];
+  results?: {
+    event: string;
+    time: string;
+    position: number;
+  }[];
+}
+
+export interface Swimmer {
+  id: string;
+  name: string;
+  age: number;
+  squad: 'learn-to-swim' | 'development' | 'performance';
+  imageUrl: string;
+  bio: string;
+  personalBests: SwimmerTime[];
+  galas: Gala[];
+  achievements: string[];
+  profileUrl?: string;
+  joinedDate: string;
+  favoriteStroke?: string;
+  goals?: string[];
+}
