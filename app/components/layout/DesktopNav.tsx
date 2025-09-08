@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { ChevronDown, Phone, Mail } from "lucide-react";
 import { Button } from "../ui/Button";
 import { navItems } from "./navData";
 
 export const DesktopNav: React.FC = () => {
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   // Split navigation into main items and "everything else"
   const mainNavItems = navItems.slice(0, 3); // About, Programs, News
@@ -53,13 +52,36 @@ export const DesktopNav: React.FC = () => {
                 Pages
               </div>
               {otherNavItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="block px-3 py-2 text-secondary hover:bg-primary/10 hover:text-primary transition-colors rounded-md"
-                >
-                  {item.label}
-                </a>
+                <div key={item.label}>
+                  {item.dropdown ? (
+                    <div className="relative group/nested">
+                      <div className="flex items-center justify-between px-3 py-2 text-secondary hover:bg-primary/10 hover:text-primary transition-colors rounded-md cursor-pointer">
+                        <a href={item.href} className="flex-1">
+                          {item.label}
+                        </a>
+                        <ChevronDown className="h-3 w-3 ml-2" />
+                      </div>
+                      <div className="absolute left-full top-0 ml-1 w-48 rounded-md bg-white shadow-lg border border-secondary/20 opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all z-50">
+                        {item.dropdown.map((subItem) => (
+                          <a
+                            key={subItem.label}
+                            href={subItem.href}
+                            className="block px-4 py-2 text-sm text-secondary hover:bg-primary/10 hover:text-primary transition-colors first:rounded-t-md last:rounded-b-md"
+                          >
+                            {subItem.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <a
+                      href={item.href}
+                      className="block px-3 py-2 text-secondary hover:bg-primary/10 hover:text-primary transition-colors rounded-md"
+                    >
+                      {item.label}
+                    </a>
+                  )}
+                </div>
               ))}
             </div>
             

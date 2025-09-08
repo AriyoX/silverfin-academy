@@ -12,9 +12,11 @@ interface SwimmerPageProps {
 // Export metadata generation functions
 export { generateMetadata, generateStaticParams } from './metadata';
 
-const SwimmerPage: React.FC<SwimmerPageProps> = ({ params }) => {
+const SwimmerPage: React.FC<SwimmerPageProps> = async ({ params }) => {
+  const { id } = await params;
+  
   // Find the swimmer by ID
-  const swimmer = SWIMMERS.find(s => s.id === params.id);
+  const swimmer = SWIMMERS.find(s => s.id === id);
 
   if (!swimmer) {
     notFound();

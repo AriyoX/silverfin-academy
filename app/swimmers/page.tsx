@@ -38,13 +38,7 @@ const SwimmersPage: React.FC = () => {
                   Meet the talented athletes who make Silverfin Academy a center of swimming excellence. 
                   From beginners taking their first strokes to elite performers competing internationally.
                 </p>
-                <Button 
-                  variant="white" 
-                  size="xl"
-                  onClick={() => document.getElementById('training-squads')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  Meet Our Athletes
-                </Button>
+              
               </AnimatedSection>
             </div>
           </Section>
@@ -69,7 +63,7 @@ const SwimmersPage: React.FC = () => {
                   description="Our youngest swimmers building water confidence, learning basic strokes, and developing a love for the water. Ages 4-10 with focus on safety, fun, and fundamental skills."
                   swimmers={learnToSwimSquad}
                   squadType="learn-to-swim"
-                  maxDisplay={6}
+                  maxDisplay={4}
                 />
               </AnimatedSection>
               
@@ -79,7 +73,7 @@ const SwimmersPage: React.FC = () => {
                   description="Intermediate swimmers refining technique, building endurance, and preparing for competitive swimming. Ages 9-14 with structured training and introduction to competition."
                   swimmers={developmentSquad}
                   squadType="development"
-                  maxDisplay={6}
+                  maxDisplay={4}
                 />
               </AnimatedSection>
               
@@ -89,7 +83,7 @@ const SwimmersPage: React.FC = () => {
                   description="Elite swimmers training at the highest level for national and international competition. Ages 13+ with intensive training, advanced technique work, and professional support."
                   swimmers={performanceSquad}
                   squadType="performance"
-                  maxDisplay={6}
+                  maxDisplay={4}
                 />
               </AnimatedSection>
             </div>

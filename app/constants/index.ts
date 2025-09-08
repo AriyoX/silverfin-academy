@@ -150,7 +150,7 @@ export const SWIMMERS: Swimmer[] = [
     name: 'Emma Nakato',
     age: 8,
     squad: 'learn-to-swim',
-    imageUrl: '/swimmers/emma-nakato.jpg',
+    imageUrl: '/hero-images/swimmer_1.jpg',
     bio: 'Emma started her swimming journey 6 months ago and has shown incredible improvement in water confidence and basic strokes.',
     personalBests: [
       { event: '25m Freestyle', time: '45.23', date: '2024-08-15', venue: 'Silverfin Academy' },
@@ -179,7 +179,7 @@ export const SWIMMERS: Swimmer[] = [
     name: 'James Kiprotich',
     age: 9,
     squad: 'learn-to-swim',
-    imageUrl: '/swimmers/james-kiprotich.jpg',
+    imageUrl: '/hero-images/swimmer_2.jpg',
     bio: 'James is a determined young swimmer who has overcome his initial fear of water to become one of our most enthusiastic learners.',
     personalBests: [
       { event: '25m Freestyle', time: '42.15', date: '2024-08-15', venue: 'Silverfin Academy' },
@@ -210,7 +210,7 @@ export const SWIMMERS: Swimmer[] = [
     name: 'Sarah Mugisha',
     age: 12,
     squad: 'development',
-    imageUrl: '/swimmers/sarah-mugisha.jpg',
+    imageUrl: '/hero-images/swimmer_1.jpg',
     bio: 'Sarah is a talented middle-distance swimmer who consistently improves her times and shows great potential for competitive swimming.',
     personalBests: [
       { event: '50m Freestyle', time: '32.45', date: '2024-07-20', venue: 'National Pool Kampala' },
@@ -253,7 +253,7 @@ export const SWIMMERS: Swimmer[] = [
     name: 'David Wanyama',
     age: 13,
     squad: 'development',
-    imageUrl: '/swimmers/david-wanyama.jpg',
+    imageUrl: '/hero-images/swimmer_2.jpg',
     bio: 'David specializes in breaststroke and individual medley events. His technical precision and race strategy make him a formidable competitor.',
     personalBests: [
       { event: '50m Breaststroke', time: '35.12', date: '2024-07-20', venue: 'National Pool Kampala' },
@@ -286,7 +286,7 @@ export const SWIMMERS: Swimmer[] = [
     name: 'Aisha Nalule',
     age: 7,
     squad: 'learn-to-swim',
-    imageUrl: '/swimmers/aisha-nalule.jpg',
+    imageUrl: '/hero-images/swimmer_3.jpg',
     bio: 'Aisha loves being in the water and has made great progress learning to float and kick.',
     personalBests: [
       { event: '25m Freestyle', time: '50.45', date: '2024-08-15', venue: 'Silverfin Academy' }
@@ -313,7 +313,7 @@ export const SWIMMERS: Swimmer[] = [
     name: 'Alex Mugabi',
     age: 10,
     squad: 'learn-to-swim',
-    imageUrl: '/swimmers/alex-mugabi.jpg',
+    imageUrl: '/hero-images/swimmer_4.jpg',
     bio: 'Alex is ready to move up to development squad and shows natural talent in all strokes.',
     personalBests: [
       { event: '25m Freestyle', time: '38.67', date: '2024-08-15', venue: 'Silverfin Academy' },
@@ -344,7 +344,7 @@ export const SWIMMERS: Swimmer[] = [
     name: 'Rebecca Atim',
     age: 11,
     squad: 'development',
-    imageUrl: '/swimmers/rebecca-atim.jpg',
+    imageUrl: '/hero-images/swimmer_3.jpg',
     bio: 'Rebecca excels in butterfly and individual medley events with great technique.',
     personalBests: [
       { event: '50m Butterfly', time: '38.45', date: '2024-06-15', venue: 'Silverfin Academy' },
@@ -373,7 +373,7 @@ export const SWIMMERS: Swimmer[] = [
     name: 'Joshua Okello',
     age: 14,
     squad: 'development',
-    imageUrl: '/swimmers/joshua-okello.jpg',
+    imageUrl: '/hero-images/swimmer_4.jpg',
     bio: 'Joshua is a strong backstroke swimmer with excellent technique and race awareness.',
     personalBests: [
       { event: '50m Backstroke', time: '32.78', date: '2024-07-20', venue: 'National Pool Kampala' },
@@ -396,6 +396,63 @@ export const SWIMMERS: Swimmer[] = [
     favoriteStroke: 'Backstroke',
     goals: ['Sub-30 seconds in 50m Backstroke', 'Join performance squad']
   },
+  {
+    id: 'maria-namukose',
+    name: 'Maria Namukose',
+    age: 13,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'Maria is a versatile swimmer with strong performances across all strokes, showing particular promise in distance events.',
+    personalBests: [
+      { event: '200m Freestyle', time: '2:28.34', date: '2024-06-15', venue: 'Silverfin Academy' },
+      { event: '400m Freestyle', time: '5:15.67', date: '2024-06-15', venue: 'Silverfin Academy' }
+    ],
+    galas: [
+      {
+        id: 'regional-champs-2024',
+        name: 'Regional Championships 2024',
+        date: '2024-06-15',
+        venue: 'Silverfin Academy',
+        events: ['200m Freestyle', '400m Freestyle'],
+        results: [
+          { event: '200m Freestyle', time: '2:28.34', position: 3 },
+          { event: '400m Freestyle', time: '5:15.67', position: 2 }
+        ]
+      }
+    ],
+    achievements: ['Regional silver medalist', 'Distance specialist'],
+    joinedDate: '2022-06-01',
+    favoriteStroke: 'Freestyle',
+    goals: ['Break 2:20 in 200m Freestyle', 'Qualify for nationals in distance events']
+  },
+  {
+    id: 'daniel-sekandi',
+    name: 'Daniel Sekandi',
+    age: 12,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'Daniel excels in sprint events and shows natural speed in freestyle and backstroke.',
+    personalBests: [
+      { event: '50m Freestyle', time: '30.45', date: '2024-07-20', venue: 'National Pool Kampala' },
+      { event: '50m Backstroke', time: '33.78', date: '2024-06-15', venue: 'Silverfin Academy' }
+    ],
+    galas: [
+      {
+        id: 'nationals-2024',
+        name: 'Uganda National Championships 2024',
+        date: '2024-07-20',
+        venue: 'National Pool Kampala',
+        events: ['50m Freestyle'],
+        results: [
+          { event: '50m Freestyle', time: '30.45', position: 8 }
+        ]
+      }
+    ],
+    achievements: ['National finalist', 'Sprint specialist'],
+    joinedDate: '2023-01-15',
+    favoriteStroke: 'Freestyle',
+    goals: ['Sub-30 seconds in 50m Freestyle', 'Join performance squad']
+  },
 
   // Performance Squad
   {
@@ -403,7 +460,7 @@ export const SWIMMERS: Swimmer[] = [
     name: 'Grace Namutebi',
     age: 16,
     squad: 'performance',
-    imageUrl: '/swimmers/grace-namutebi.jpg',
+    imageUrl: '/hero-images/swimmer_3.jpg',
     bio: 'Grace is our star sprinter who has represented Uganda at international competitions. She holds multiple national records and is targeting Commonwealth Games qualification.',
     personalBests: [
       { event: '50m Freestyle', time: '26.78', date: '2024-07-20', venue: 'National Pool Kampala' },
@@ -452,7 +509,7 @@ export const SWIMMERS: Swimmer[] = [
     name: 'Michael Ssemakula',
     age: 17,
     squad: 'performance',
-    imageUrl: '/swimmers/michael-ssemakula.jpg',
+    imageUrl: '/hero-images/swimmer_4.jpg',
     bio: 'Michael is a versatile swimmer excelling in middle and long-distance events. His dedication and work ethic inspire younger swimmers in the academy.',
     personalBests: [
       { event: '200m Freestyle', time: '1:58.34', date: '2024-07-20', venue: 'National Pool Kampala' },
@@ -494,5 +551,99 @@ export const SWIMMERS: Swimmer[] = [
     joinedDate: '2018-03-15',
     favoriteStroke: 'Freestyle',
     goals: ['Sub-4:10 in 400m Freestyle', 'International medal', 'University scholarship']
+  },
+  {
+    id: 'isaac-tumusiime',
+    name: 'Isaac Tumusiime',
+    age: 15,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'Isaac is a technical swimmer specializing in individual medley and breaststroke events with excellent race tactics.',
+    personalBests: [
+      { event: '200m IM', time: '2:08.45', date: '2024-07-20', venue: 'National Pool Kampala' },
+      { event: '100m Breaststroke', time: '1:12.34', date: '2024-05-18', venue: 'Aquatic Centre Nairobi' },
+      { event: '200m Breaststroke', time: '2:35.67', date: '2024-07-20', venue: 'National Pool Kampala' }
+    ],
+    galas: [
+      {
+        id: 'all-africa-games-2024',
+        name: 'All Africa Games 2024',
+        date: '2024-05-18',
+        venue: 'Aquatic Centre Nairobi',
+        events: ['200m IM', '100m Breaststroke'],
+        results: [
+          { event: '200m IM', time: '2:10.23', position: 6 },
+          { event: '100m Breaststroke', time: '1:12.34', position: 5 }
+        ]
+      },
+      {
+        id: 'nationals-2024',
+        name: 'Uganda National Championships 2024',
+        date: '2024-07-20',
+        venue: 'National Pool Kampala',
+        events: ['200m IM', '200m Breaststroke'],
+        results: [
+          { event: '200m IM', time: '2:08.45', position: 1 },
+          { event: '200m Breaststroke', time: '2:35.67', position: 2 }
+        ]
+      }
+    ],
+    achievements: [
+      'National Champion - 200m IM',
+      'All Africa Games participant',
+      'Technical excellence award',
+      'National record holder - 200m IM (Age 15)'
+    ],
+    profileUrl: 'https://swimrankings.net/index.php?page=athleteDetail&athleteId=98765',
+    joinedDate: '2020-08-01',
+    favoriteStroke: 'Individual Medley',
+    goals: ['Sub-2:05 in 200m IM', 'Commonwealth Games selection', 'Youth Olympic Games']
+  },
+  {
+    id: 'priscilla-nakato',
+    name: 'Priscilla Nakato',
+    age: 16,
+    squad: 'performance',
+    imageUrl: '/swimmers/swimmer_1.jpg',
+    bio: 'Priscilla is a backstroke specialist with smooth technique and strong underwater skills.',
+    personalBests: [
+      { event: '50m Backstroke', time: '29.78', date: '2024-07-20', venue: 'National Pool Kampala' },
+      { event: '100m Backstroke', time: '1:03.45', date: '2024-05-18', venue: 'Aquatic Centre Nairobi' },
+      { event: '200m Backstroke', time: '2:18.90', date: '2024-07-20', venue: 'National Pool Kampala' }
+    ],
+    galas: [
+      {
+        id: 'all-africa-games-2024',
+        name: 'All Africa Games 2024',
+        date: '2024-05-18',
+        venue: 'Aquatic Centre Nairobi',
+        events: ['100m Backstroke', '200m Backstroke'],
+        results: [
+          { event: '100m Backstroke', time: '1:03.45', position: 4 },
+          { event: '200m Backstroke', time: '2:20.12', position: 5 }
+        ]
+      },
+      {
+        id: 'nationals-2024',
+        name: 'Uganda National Championships 2024',
+        date: '2024-07-20',
+        venue: 'National Pool Kampala',
+        events: ['50m Backstroke', '200m Backstroke'],
+        results: [
+          { event: '50m Backstroke', time: '29.78', position: 1 },
+          { event: '200m Backstroke', time: '2:18.90', position: 1 }
+        ]
+      }
+    ],
+    achievements: [
+      'National Champion - Backstroke events',
+      'All Africa Games finalist',
+      'National record holder - 50m Backstroke',
+      'Backstroke specialist award'
+    ],
+    profileUrl: 'https://swimrankings.net/index.php?page=athleteDetail&athleteId=11223',
+    joinedDate: '2019-09-15',
+    favoriteStroke: 'Backstroke',
+    goals: ['Sub-29 seconds in 50m Backstroke', 'Commonwealth Games medal', 'World Championships qualification']
   }
 ];

@@ -8,7 +8,8 @@ interface SwimmerPageProps {
 }
 
 export async function generateMetadata({ params }: SwimmerPageProps): Promise<Metadata> {
-  const swimmer = SWIMMERS.find(s => s.id === params.id);
+  const { id } = await params;
+  const swimmer = SWIMMERS.find(s => s.id === id);
 
   if (!swimmer) {
     return {

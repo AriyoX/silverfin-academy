@@ -8,7 +8,8 @@ interface SquadPageProps {
 }
 
 export async function generateMetadata({ params }: SquadPageProps): Promise<Metadata> {
-  const squadType = params.squad as 'learn-to-swim' | 'development' | 'performance';
+  const { squad } = await params;
+  const squadType = squad as 'learn-to-swim' | 'development' | 'performance';
   
   const squadInfo = {
     'learn-to-swim': {

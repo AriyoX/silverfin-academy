@@ -17,6 +17,15 @@ export const navItems = [
   },
   { label: "Events", href: "/events" },
   { label: "Coaches", href: "/coaches" },
-  { label: "Swimmers", href: "/swimmers" },
+  { 
+    label: "Swimmers", 
+    href: "/swimmers",
+    dropdown: [
+      { label: "All Swimmers", href: "/swimmers" },
+      { label: "Learn to Swim", href: "/swimmers/squads/learn-to-swim" },
+      { label: "Development Squad", href: "/swimmers/squads/development" },
+      { label: "Performance Squad", href: "/swimmers/squads/performance" },
+    ]
+  },
   { label: "Contact", href: "/contact" }
 ];
