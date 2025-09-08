@@ -146,504 +146,792 @@ export const NAV_ITEMS = [
 export const SWIMMERS: Swimmer[] = [
   // Learn to Swim Squad
   {
-    id: 'emma-nakato',
-    name: 'Emma Nakato',
-    age: 8,
+    id: 'jeremiah-bwogi-kisawuzi',
+    name: 'Jeremiah Bwogi Kisawuzi',
+    age: 4,
     squad: 'learn-to-swim',
     imageUrl: '/hero-images/swimmer_1.jpg',
-    bio: 'Emma started her swimming journey 6 months ago and has shown incredible improvement in water confidence and basic strokes.',
-    personalBests: [
-      { event: '25m Freestyle', time: '45.23', date: '2024-08-15', venue: 'Silverfin Academy' },
-      { event: '25m Backstroke', time: '52.18', date: '2024-08-15', venue: 'Silverfin Academy' }
-    ],
-    galas: [
-      {
-        id: 'club-gala-2024',
-        name: 'Silverfin Club Gala 2024',
-        date: '2024-08-15',
-        venue: 'Hill Preparatory School Pool',
-        events: ['25m Freestyle', '25m Backstroke'],
-        results: [
-          { event: '25m Freestyle', time: '45.23', position: 3 },
-          { event: '25m Backstroke', time: '52.18', position: 2 }
-        ]
-      }
-    ],
-    achievements: ['First 25m swim unassisted', 'Improved freestyle time by 15 seconds'],
-    joinedDate: '2024-02-01',
-    favoriteStroke: 'Freestyle',
-    goals: ['Learn butterfly stroke', 'Complete 50m freestyle']
+    bio: 'A young and enthusiastic swimmer, just starting his journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   },
   {
-    id: 'james-kiprotich',
-    name: 'James Kiprotich',
-    age: 9,
+    id: 'rebecca-namiiro',
+    name: 'Rebecca Namiiro',
+    age: 5,
     squad: 'learn-to-swim',
     imageUrl: '/hero-images/swimmer_2.jpg',
-    bio: 'James is a determined young swimmer who has overcome his initial fear of water to become one of our most enthusiastic learners.',
-    personalBests: [
-      { event: '25m Freestyle', time: '42.15', date: '2024-08-15', venue: 'Silverfin Academy' },
-      { event: '25m Breaststroke', time: '48.32', date: '2024-08-15', venue: 'Silverfin Academy' }
-    ],
-    galas: [
-      {
-        id: 'club-gala-2024',
-        name: 'Silverfin Club Gala 2024',
-        date: '2024-08-15',
-        venue: 'Hill Preparatory School Pool',
-        events: ['25m Freestyle', '25m Breaststroke'],
-        results: [
-          { event: '25m Freestyle', time: '42.15', position: 1 },
-          { event: '25m Breaststroke', time: '48.32', position: 2 }
-        ]
-      }
-    ],
-    achievements: ['Club record holder - 25m Freestyle (Age 9)', 'Perfect attendance award'],
-    joinedDate: '2024-01-15',
-    favoriteStroke: 'Freestyle',
-    goals: ['Join development squad', 'Learn proper diving technique']
+    bio: 'A young and enthusiastic swimmer, just starting her journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'israel-kanyike',
+    name: 'Israel Kanyike',
+    age: 5,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_3.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting his journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'gabriel-mwesigwa-james-marie',
+    name: 'Gabriel Mwesigwa James-Marie',
+    age: 5,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting his journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'jonatha-bwogi-nabukeera',
+    name: 'Jonatha Bwogi Nabukeera',
+    age: 5,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting her journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'aimie-imora',
+    name: 'Aimie Imora',
+    age: 6,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting her journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'christian-okecho-owori',
+    name: 'Christian Okecho Owori',
+    age: 6,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_3.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting his journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'roman-byaruhanga-emanzi',
+    name: 'Roman Byaruhanga Emanzi',
+    age: 6,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting his journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'kimuli-enzo-israel',
+    name: 'Kimuli Enzo Israel',
+    age: 7,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting his journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'kwikiriza-wilma',
+    name: 'Kwikiriza Wilma',
+    age: 7,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting her journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'lucas-mugisha',
+    name: 'Lucas Mugisha',
+    age: 7,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_3.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting his journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'dorothy-nakazi',
+    name: 'Dorothy Nakazi',
+    age: 7,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting her journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'kisakye-mugwanya-gabriella-shalom',
+    name: 'Kisakye Mugwanya Gabriella Shalom',
+    age: 7,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting his journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'abisha-abowe',
+    name: 'Abisha Abowe',
+    age: 7,
+    squad: 'learn-to-swim',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'A young and enthusiastic swimmer, just starting his journey in the water.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   },
 
   // Development Squad
   {
-    id: 'sarah-mugisha',
-    name: 'Sarah Mugisha',
-    age: 12,
+    id: 'nkoola-janine-jolie',
+    name: 'Nkoola Janine Jolie',
+    age: 8,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_3.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/nkoolajaninejolie',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'lionel-abitegeka-edwards',
+    name: 'Lionel Abitegeka Edwards',
+    age: 8,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/lionelabitegekaedwards',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'tendo-matthew-ssaka',
+    name: 'Tendo Matthew Ssaka',
+    age: 8,
     squad: 'development',
     imageUrl: '/hero-images/swimmer_1.jpg',
-    bio: 'Sarah is a talented middle-distance swimmer who consistently improves her times and shows great potential for competitive swimming.',
-    personalBests: [
-      { event: '50m Freestyle', time: '32.45', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '100m Freestyle', time: '1:12.34', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '50m Backstroke', time: '35.67', date: '2024-06-15', venue: 'Silverfin Academy' },
-      { event: '100m IM', time: '1:25.89', date: '2024-07-20', venue: 'National Pool Kampala' }
-    ],
-    galas: [
-      {
-        id: 'nationals-2024',
-        name: 'Uganda National Championships 2024',
-        date: '2024-07-20',
-        venue: 'National Pool Kampala',
-        events: ['50m Freestyle', '100m Freestyle', '100m IM'],
-        results: [
-          { event: '50m Freestyle', time: '32.45', position: 5 },
-          { event: '100m Freestyle', time: '1:12.34', position: 6 },
-          { event: '100m IM', time: '1:25.89', position: 4 }
-        ]
-      },
-      {
-        id: 'regional-champs-2024',
-        name: 'Regional Championships 2024',
-        date: '2024-06-15',
-        venue: 'Silverfin Academy',
-        events: ['50m Backstroke', '100m Freestyle'],
-        results: [
-          { event: '50m Backstroke', time: '35.67', position: 1 },
-          { event: '100m Freestyle', time: '1:13.21', position: 2 }
-        ]
-      }
-    ],
-    achievements: ['Regional Champion - 50m Backstroke', 'National Finals qualifier', 'Team Captain'],
-    joinedDate: '2022-09-01',
-    favoriteStroke: 'Freestyle',
-    goals: ['Break 30 seconds in 50m Freestyle', 'Qualify for East African Championships']
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/tendomatthewssaka',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   },
   {
-    id: 'david-wanyama',
-    name: 'David Wanyama',
-    age: 13,
+    id: 'kanyike-kirabo-elnathan',
+    name: 'Kanyike Kirabo Elnathan',
+    age: 8,
     squad: 'development',
     imageUrl: '/hero-images/swimmer_2.jpg',
-    bio: 'David specializes in breaststroke and individual medley events. His technical precision and race strategy make him a formidable competitor.',
-    personalBests: [
-      { event: '50m Breaststroke', time: '35.12', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '100m Breaststroke', time: '1:18.45', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '200m IM', time: '2:45.67', date: '2024-06-15', venue: 'Silverfin Academy' }
-    ],
-    galas: [
-      {
-        id: 'nationals-2024',
-        name: 'Uganda National Championships 2024',
-        date: '2024-07-20',
-        venue: 'National Pool Kampala',
-        events: ['50m Breaststroke', '100m Breaststroke'],
-        results: [
-          { event: '50m Breaststroke', time: '35.12', position: 3 },
-          { event: '100m Breaststroke', time: '1:18.45', position: 2 }
-        ]
-      }
-    ],
-    achievements: ['National Bronze Medal - 50m Breaststroke', 'Regional Record Holder - 200m IM (Age 13)'],
-    profileUrl: 'https://swimrankings.net/index.php?page=athleteDetail&athleteId=12345',
-    joinedDate: '2021-08-15',
-    favoriteStroke: 'Breaststroke',
-    goals: ['Break national age group record', 'Represent Uganda internationally']
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/kanyikekiraboelnathan',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   },
-
-  // Additional Learn to Swim swimmers
   {
-    id: 'aisha-nalule',
-    name: 'Aisha Nalule',
-    age: 7,
-    squad: 'learn-to-swim',
+    id: 'bena-nkundwa-ahumuza',
+    name: 'Bena Nkundwa Ahumuza',
+    age: 8,
+    squad: 'development',
     imageUrl: '/hero-images/swimmer_3.jpg',
-    bio: 'Aisha loves being in the water and has made great progress learning to float and kick.',
-    personalBests: [
-      { event: '25m Freestyle', time: '50.45', date: '2024-08-15', venue: 'Silverfin Academy' }
-    ],
-    galas: [
-      {
-        id: 'club-gala-2024',
-        name: 'Silverfin Club Gala 2024',
-        date: '2024-08-15',
-        venue: 'Hill Preparatory School Pool',
-        events: ['25m Freestyle'],
-        results: [
-          { event: '25m Freestyle', time: '50.45', position: 4 }
-        ]
-      }
-    ],
-    achievements: ['Completed first length', 'Water confidence award'],
-    joinedDate: '2024-03-01',
-    favoriteStroke: 'Backstroke',
-    goals: ['Learn breaststroke', 'Swim 50m without stopping']
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/benankundwaahumuza',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   },
   {
-    id: 'alex-mugabi',
-    name: 'Alex Mugabi',
-    age: 10,
-    squad: 'learn-to-swim',
+    id: 'elsa-victory-dande',
+    name: 'Elsa Victory Dande',
+    age: 9,
+    squad: 'development',
     imageUrl: '/hero-images/swimmer_4.jpg',
-    bio: 'Alex is ready to move up to development squad and shows natural talent in all strokes.',
-    personalBests: [
-      { event: '25m Freestyle', time: '38.67', date: '2024-08-15', venue: 'Silverfin Academy' },
-      { event: '25m Backstroke', time: '45.23', date: '2024-08-15', venue: 'Silverfin Academy' }
-    ],
-    galas: [
-      {
-        id: 'club-gala-2024',
-        name: 'Silverfin Club Gala 2024',
-        date: '2024-08-15',
-        venue: 'Hill Preparatory School Pool',
-        events: ['25m Freestyle', '25m Backstroke'],
-        results: [
-          { event: '25m Freestyle', time: '38.67', position: 1 },
-          { event: '25m Backstroke', time: '45.23', position: 1 }
-        ]
-      }
-    ],
-    achievements: ['Double gold medalist - Club gala', 'Squad leader'],
-    joinedDate: '2023-09-01',
-    favoriteStroke: 'Freestyle',
-    goals: ['Join development squad', 'Learn butterfly']
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/elsavictorydande',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   },
-
-  // Additional Development Squad swimmers
   {
-    id: 'rebecca-atim',
-    name: 'Rebecca Atim',
+    id: 'gianna-mary-musiimenta',
+    name: 'Gianna Mary Musiimenta',
+    age: 9,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [
+        { event: '50m Freestyle', time: '47.55', date: '', venue: '' }
+    ],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/giannamarymusiimenta',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'diarah-sama',
+    name: 'Diarah Sama',
+    age: 10,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/diarahsama',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'ivancka-ssaka',
+    name: 'Ivancka Ssaka',
+    age: 10,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_3.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/ivanckassaka',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'elsie-letaru',
+    name: 'Elsie Letaru',
+    age: 11,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/elsieletaru',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'eleanor-nakimuli-gabriela',
+    name: 'Eleanor Nakimuli GABRIELA',
+    age: 11,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/eleanornakimuligabriela',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'tyrone-tinkamanyire',
+    name: 'Tyrone Tinkamanyire',
+    age: 11,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/tyronetinkamanyire',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'sebastian-ssimbwa-luke',
+    name: 'Sebastian Ssimbwa Luke',
     age: 11,
     squad: 'development',
     imageUrl: '/hero-images/swimmer_3.jpg',
-    bio: 'Rebecca excels in butterfly and individual medley events with great technique.',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
     personalBests: [
-      { event: '50m Butterfly', time: '38.45', date: '2024-06-15', venue: 'Silverfin Academy' },
-      { event: '100m IM', time: '1:28.90', date: '2024-06-15', venue: 'Silverfin Academy' }
+        { event: '50m Backstroke', time: '41.02', date: '', venue: '' },
+        { event: '25m Breaststroke', time: '23.81', date: '', venue: '' }
     ],
-    galas: [
-      {
-        id: 'regional-champs-2024',
-        name: 'Regional Championships 2024',
-        date: '2024-06-15',
-        venue: 'Silverfin Academy',
-        events: ['50m Butterfly', '100m IM'],
-        results: [
-          { event: '50m Butterfly', time: '38.45', position: 2 },
-          { event: '100m IM', time: '1:28.90', position: 3 }
-        ]
-      }
-    ],
-    achievements: ['Regional medalist', 'Technical excellence award'],
-    joinedDate: '2022-02-01',
-    favoriteStroke: 'Butterfly',
-    goals: ['Break 35 seconds in 50m Butterfly', 'Qualify for nationals']
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/lukesebastianssimbwa',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   },
   {
-    id: 'joshua-okello',
-    name: 'Joshua Okello',
-    age: 14,
+    id: 'karl-katongole',
+    name: 'Karl Katongole',
+    age: 12,
     squad: 'development',
     imageUrl: '/hero-images/swimmer_4.jpg',
-    bio: 'Joshua is a strong backstroke swimmer with excellent technique and race awareness.',
-    personalBests: [
-      { event: '50m Backstroke', time: '32.78', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '100m Backstroke', time: '1:10.45', date: '2024-06-15', venue: 'Silverfin Academy' }
-    ],
-    galas: [
-      {
-        id: 'nationals-2024',
-        name: 'Uganda National Championships 2024',
-        date: '2024-07-20',
-        venue: 'National Pool Kampala',
-        events: ['50m Backstroke'],
-        results: [
-          { event: '50m Backstroke', time: '32.78', position: 7 }
-        ]
-      }
-    ],
-    achievements: ['National qualifier', 'Age group record holder'],
-    joinedDate: '2021-01-15',
-    favoriteStroke: 'Backstroke',
-    goals: ['Sub-30 seconds in 50m Backstroke', 'Join performance squad']
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/karlkatongole',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   },
   {
-    id: 'maria-namukose',
-    name: 'Maria Namukose',
-    age: 13,
+    id: 'kristian-mugumya-bwisho',
+    name: 'Kristian Mugumya Bwisho',
+    age: 12,
     squad: 'development',
     imageUrl: '/hero-images/swimmer_1.jpg',
-    bio: 'Maria is a versatile swimmer with strong performances across all strokes, showing particular promise in distance events.',
-    personalBests: [
-      { event: '200m Freestyle', time: '2:28.34', date: '2024-06-15', venue: 'Silverfin Academy' },
-      { event: '400m Freestyle', time: '5:15.67', date: '2024-06-15', venue: 'Silverfin Academy' }
-    ],
-    galas: [
-      {
-        id: 'regional-champs-2024',
-        name: 'Regional Championships 2024',
-        date: '2024-06-15',
-        venue: 'Silverfin Academy',
-        events: ['200m Freestyle', '400m Freestyle'],
-        results: [
-          { event: '200m Freestyle', time: '2:28.34', position: 3 },
-          { event: '400m Freestyle', time: '5:15.67', position: 2 }
-        ]
-      }
-    ],
-    achievements: ['Regional silver medalist', 'Distance specialist'],
-    joinedDate: '2022-06-01',
-    favoriteStroke: 'Freestyle',
-    goals: ['Break 2:20 in 200m Freestyle', 'Qualify for nationals in distance events']
+    bio: 'A dedicated swimmer who has secured 6 Gold medals and one Bronze medal since starting competitive swimming in February 2023. [22]',
+    personalBests: [],
+    galas: [],
+    achievements: ['6 Gold medals', '1 Bronze medal'],
+    profileUrl: 'https://www.ugandaswimming.com/kristianbwisho',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: ['Represent Uganda at the highest level of competitive swimming. [22]']
   },
   {
-    id: 'daniel-sekandi',
-    name: 'Daniel Sekandi',
+    id: 'jeremiah-ssempijja',
+    name: 'Jeremiah Ssempijja',
     age: 12,
     squad: 'development',
     imageUrl: '/hero-images/swimmer_2.jpg',
-    bio: 'Daniel excels in sprint events and shows natural speed in freestyle and backstroke.',
-    personalBests: [
-      { event: '50m Freestyle', time: '30.45', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '50m Backstroke', time: '33.78', date: '2024-06-15', venue: 'Silverfin Academy' }
-    ],
-    galas: [
-      {
-        id: 'nationals-2024',
-        name: 'Uganda National Championships 2024',
-        date: '2024-07-20',
-        venue: 'National Pool Kampala',
-        events: ['50m Freestyle'],
-        results: [
-          { event: '50m Freestyle', time: '30.45', position: 8 }
-        ]
-      }
-    ],
-    achievements: ['National finalist', 'Sprint specialist'],
-    joinedDate: '2023-01-15',
-    favoriteStroke: 'Freestyle',
-    goals: ['Sub-30 seconds in 50m Freestyle', 'Join performance squad']
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/jeremiahssempijja',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'shona-mugisha',
+    name: 'Shona Mugisha',
+    age: 12,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_3.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/shonamugisha',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'victoria-ssaka',
+    name: 'Victoria Ssaka',
+    age: 12,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/victoriassaka',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'elijah-shakazulu',
+    name: 'Elijah ShakaZulu',
+    age: 13,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/elijahshakazulu',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'genevieve-mary-murungi',
+    name: 'Genevieve Mary Murungi',
+    age: 14,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/genevievemarymurungi',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'elijah-polo',
+    name: 'Elijah Polo',
+    age: 14,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_3.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/elijahpolo',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'mellanie-manuella-dande',
+    name: 'Mellanie Manuella Dande',
+    age: 14,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/mellaniemanuelladande',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'solange-katongole',
+    name: 'Solange Katongole',
+    age: 14,
+    squad: 'development',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'A promising swimmer in the development squad, showing great potential.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/solangekatongole',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   },
 
   // Performance Squad
   {
-    id: 'grace-namutebi',
-    name: 'Grace Namutebi',
+    id: 'isaiah-kuc',
+    name: 'Isaiah Kuc',
+    age: 16,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [
+        { event: '800m Freestyle', time: '09:21.70', date: '', venue: '17th Tanzania National' },
+        { event: '50m Butterfly', time: '26.16', date: '', venue: 'NTSAA Secondary Swimming' },
+        { event: '50m Freestyle', time: '25.65', date: '', venue: 'Arusha International' },
+        { event: '200m IM', time: '02:17.89', date: '', venue: '17th Tanzania National' }
+    ],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/isaiahkuc',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'kylee-katongole',
+    name: 'Kylee Katongole',
     age: 16,
     squad: 'performance',
     imageUrl: '/hero-images/swimmer_3.jpg',
-    bio: 'Grace is our star sprinter who has represented Uganda at international competitions. She holds multiple national records and is targeting Commonwealth Games qualification.',
-    personalBests: [
-      { event: '50m Freestyle', time: '26.78', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '100m Freestyle', time: '58.23', date: '2024-05-18', venue: 'Aquatic Centre Nairobi' },
-      { event: '50m Butterfly', time: '28.91', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '100m Butterfly', time: '1:04.56', date: '2024-05-18', venue: 'Aquatic Centre Nairobi' }
-    ],
-    galas: [
-      {
-        id: 'all-africa-games-2024',
-        name: 'All Africa Games 2024',
-        date: '2024-05-18',
-        venue: 'Aquatic Centre Nairobi',
-        events: ['50m Freestyle', '100m Freestyle', '100m Butterfly'],
-        results: [
-          { event: '50m Freestyle', time: '27.12', position: 8 },
-          { event: '100m Freestyle', time: '58.23', position: 6 },
-          { event: '100m Butterfly', time: '1:04.56', position: 7 }
-        ]
-      },
-      {
-        id: 'nationals-2024',
-        name: 'Uganda National Championships 2024',
-        date: '2024-07-20',
-        venue: 'National Pool Kampala',
-        events: ['50m Freestyle', '50m Butterfly'],
-        results: [
-          { event: '50m Freestyle', time: '26.78', position: 1 },
-          { event: '50m Butterfly', time: '28.91', position: 1 }
-        ]
-      }
-    ],
-    achievements: [
-      'National Record Holder - 50m Freestyle',
-      'All Africa Games Finalist',
-      'Commonwealth Games qualifier',
-      'Youth Olympic Games participant'
-    ],
-    profileUrl: 'https://swimrankings.net/index.php?page=athleteDetail&athleteId=67890',
-    joinedDate: '2019-01-10',
-    favoriteStroke: 'Freestyle',
-    goals: ['Commonwealth Games medal', 'Sub-26 seconds in 50m Freestyle', 'Olympic qualification']
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/kyleekatongole',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   },
   {
-    id: 'michael-ssemakula',
-    name: 'Michael Ssemakula',
-    age: 17,
-    squad: 'performance',
-    imageUrl: '/hero-images/swimmer_4.jpg',
-    bio: 'Michael is a versatile swimmer excelling in middle and long-distance events. His dedication and work ethic inspire younger swimmers in the academy.',
-    personalBests: [
-      { event: '200m Freestyle', time: '1:58.34', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '400m Freestyle', time: '4:12.67', date: '2024-05-18', venue: 'Aquatic Centre Nairobi' },
-      { event: '1500m Freestyle', time: '16:45.23', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '200m IM', time: '2:15.78', date: '2024-06-15', venue: 'Silverfin Academy' }
-    ],
-    galas: [
-      {
-        id: 'all-africa-games-2024',
-        name: 'All Africa Games 2024',
-        date: '2024-05-18',
-        venue: 'Aquatic Centre Nairobi',
-        events: ['400m Freestyle', '1500m Freestyle'],
-        results: [
-          { event: '400m Freestyle', time: '4:12.67', position: 5 },
-          { event: '1500m Freestyle', time: '16:52.34', position: 4 }
-        ]
-      },
-      {
-        id: 'nationals-2024',
-        name: 'Uganda National Championships 2024',
-        date: '2024-07-20',
-        venue: 'National Pool Kampala',
-        events: ['200m Freestyle', '1500m Freestyle'],
-        results: [
-          { event: '200m Freestyle', time: '1:58.34', position: 1 },
-          { event: '1500m Freestyle', time: '16:45.23', position: 1 }
-        ]
-      }
-    ],
-    achievements: [
-      'National Champion - Distance events',
-      'All Africa Games participant',
-      'Regional record holder - 1500m Freestyle',
-      'Academy leadership award'
-    ],
-    profileUrl: 'https://swimrankings.net/index.php?page=athleteDetail&athleteId=54321',
-    joinedDate: '2018-03-15',
-    favoriteStroke: 'Freestyle',
-    goals: ['Sub-4:10 in 400m Freestyle', 'International medal', 'University scholarship']
-  },
-  {
-    id: 'isaac-tumusiime',
-    name: 'Isaac Tumusiime',
-    age: 15,
-    squad: 'performance',
-    imageUrl: '/hero-images/swimmer_1.jpg',
-    bio: 'Isaac is a technical swimmer specializing in individual medley and breaststroke events with excellent race tactics.',
-    personalBests: [
-      { event: '200m IM', time: '2:08.45', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '100m Breaststroke', time: '1:12.34', date: '2024-05-18', venue: 'Aquatic Centre Nairobi' },
-      { event: '200m Breaststroke', time: '2:35.67', date: '2024-07-20', venue: 'National Pool Kampala' }
-    ],
-    galas: [
-      {
-        id: 'all-africa-games-2024',
-        name: 'All Africa Games 2024',
-        date: '2024-05-18',
-        venue: 'Aquatic Centre Nairobi',
-        events: ['200m IM', '100m Breaststroke'],
-        results: [
-          { event: '200m IM', time: '2:10.23', position: 6 },
-          { event: '100m Breaststroke', time: '1:12.34', position: 5 }
-        ]
-      },
-      {
-        id: 'nationals-2024',
-        name: 'Uganda National Championships 2024',
-        date: '2024-07-20',
-        venue: 'National Pool Kampala',
-        events: ['200m IM', '200m Breaststroke'],
-        results: [
-          { event: '200m IM', time: '2:08.45', position: 1 },
-          { event: '200m Breaststroke', time: '2:35.67', position: 2 }
-        ]
-      }
-    ],
-    achievements: [
-      'National Champion - 200m IM',
-      'All Africa Games participant',
-      'Technical excellence award',
-      'National record holder - 200m IM (Age 15)'
-    ],
-    profileUrl: 'https://swimrankings.net/index.php?page=athleteDetail&athleteId=98765',
-    joinedDate: '2020-08-01',
-    favoriteStroke: 'Individual Medley',
-    goals: ['Sub-2:05 in 200m IM', 'Commonwealth Games selection', 'Youth Olympic Games']
-  },
-  {
-    id: 'priscilla-nakato',
-    name: 'Priscilla Nakato',
+    id: 'jethro-mugisha',
+    name: 'Jethro Mugisha',
     age: 16,
     squad: 'performance',
-    imageUrl: '/swimmers/swimmer_1.jpg',
-    bio: 'Priscilla is a backstroke specialist with smooth technique and strong underwater skills.',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/jethromugisha',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'raya-inell-ba',
+    name: 'Raya Inell Ba',
+    age: 16,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
     personalBests: [
-      { event: '50m Backstroke', time: '29.78', date: '2024-07-20', venue: 'National Pool Kampala' },
-      { event: '100m Backstroke', time: '1:03.45', date: '2024-05-18', venue: 'Aquatic Centre Nairobi' },
-      { event: '200m Backstroke', time: '2:18.90', date: '2024-07-20', venue: 'National Pool Kampala' }
+        { event: '50m Freestyle', time: '29.85', date: '2024-06-27', venue: '' },
+        { event: '50m Breaststroke', time: '38.48', date: '2024-06-27', venue: '' },
+        { event: '50m Butterfly', time: '33.09', date: '2024-06-27', venue: '' },
+        { event: '100m Breaststroke', time: '01:27.68', date: '2024-06-27', venue: '' },
+        { event: '100m Freestyle', time: '01:08.60', date: '2024-06-27', venue: '' },
+        { event: '50m Backstroke', time: '37.52', date: '2024-06-27', venue: '' }
     ],
-    galas: [
-      {
-        id: 'all-africa-games-2024',
-        name: 'All Africa Games 2024',
-        date: '2024-05-18',
-        venue: 'Aquatic Centre Nairobi',
-        events: ['100m Backstroke', '200m Backstroke'],
-        results: [
-          { event: '100m Backstroke', time: '1:03.45', position: 4 },
-          { event: '200m Backstroke', time: '2:20.12', position: 5 }
-        ]
-      },
-      {
-        id: 'nationals-2024',
-        name: 'Uganda National Championships 2024',
-        date: '2024-07-20',
-        venue: 'National Pool Kampala',
-        events: ['50m Backstroke', '200m Backstroke'],
-        results: [
-          { event: '50m Backstroke', time: '29.78', position: 1 },
-          { event: '200m Backstroke', time: '2:18.90', position: 1 }
-        ]
-      }
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/rayainellba',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'kayla-elisha-arinda',
+    name: 'Kayla Elisha Arinda',
+    age: 17,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/kaylaelishaarinda',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'shane-katongole',
+    name: 'Shane Katongole',
+    age: 18,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_3.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/shanekatongole',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'sulea-namubiru',
+    name: 'Sulea Namubiru',
+    age: 19,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/suleanamubiru',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'karla-mugisha',
+    name: 'Karla Mugisha',
+    age: 19,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/karlamugisha',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'malcolm-okecho',
+    name: 'Malcolm Okecho',
+    age: 19,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/malcolmokecho',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'larry-graig-feni',
+    name: 'Larry Graig Feni',
+    age: 19,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_3.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/larrygraigfeni',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'esther-atto',
+    name: 'Esther Atto',
+    age: 19,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/estheratto',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'namanya-ampaire',
+    name: 'Namanya Ampaire',
+    age: 21,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_1.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/ampairenamanya',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'jagwe-eliab',
+    name: 'Jagwe Eliab',
+    age: 21,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_2.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/jagweeliab',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'trevor-kimuli-john',
+    name: 'Trevor Kimuli John',
+    age: 24,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_3.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [],
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/trevorkimulijohn',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
+  },
+  {
+    id: 'jacob-mugisha',
+    name: 'Jacob Mugisha',
+    age: 25,
+    squad: 'performance',
+    imageUrl: '/hero-images/swimmer_4.jpg',
+    bio: 'A talented swimmer in the performance squad, consistently achieving personal bests.',
+    personalBests: [
+        { event: '50m Butterfly', time: '26.18', date: '', venue: '' }
     ],
-    achievements: [
-      'National Champion - Backstroke events',
-      'All Africa Games finalist',
-      'National record holder - 50m Backstroke',
-      'Backstroke specialist award'
-    ],
-    profileUrl: 'https://swimrankings.net/index.php?page=athleteDetail&athleteId=11223',
-    joinedDate: '2019-09-15',
-    favoriteStroke: 'Backstroke',
-    goals: ['Sub-29 seconds in 50m Backstroke', 'Commonwealth Games medal', 'World Championships qualification']
+    galas: [],
+    achievements: [],
+    profileUrl: 'https://www.ugandaswimming.com/mjjacob',
+    joinedDate: '',
+    favoriteStroke: '',
+    goals: []
   }
 ];
