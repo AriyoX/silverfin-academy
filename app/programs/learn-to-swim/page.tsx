@@ -33,7 +33,6 @@ const LearnToSwimPage: React.FC = () => {
     description: "Water confidence, safety, and foundational technique for beginners.",
     ageGroup: "4-10 years",
     frequency: "Weekdays",
-    price: 150000,
     duration: "4 weeks",
     sessions: "3 sessions per week"
   };
@@ -343,7 +342,7 @@ const LearnToSwimPage: React.FC = () => {
                   <div>
                     <h4 className="font-semibold text-primary mb-2">Price</h4>
                     <p className="text-xl font-bold text-primary">
-                      UGX {program.price.toLocaleString()}
+                      Contact us for pricing
                     </p>
                   </div>
                 </div>
@@ -437,7 +436,7 @@ const LearnToSwimPage: React.FC = () => {
                 size="xl"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Enroll Now - UGX {program.price.toLocaleString()}
+                Enroll Now - Contact us
               </Button>
               <Link href="/programs">
                 <Button variant="hero-outline" size="xl">

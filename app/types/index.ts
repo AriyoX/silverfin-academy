@@ -56,7 +56,7 @@ export interface Facility {
 export interface SwimmerTime {
   event: string;
   time: string;
-  date: string;
+  date?: string;
   venue?: string;
 }
 
@@ -71,6 +71,27 @@ export interface Gala {
     time: string;
     position: number;
   }[];
+}
+
+export interface Event {
+  id: string;
+  title: string;
+  date: string;
+  time: string;
+  venue: string;
+  description: string;
+  type: 'competition' | 'training' | 'gala' | 'workshop';
+  registrationOpen: boolean;
+  capacity?: number;
+  registered?: number;
+  imageUrl?: string;
+  highlights?: string[];
+  results?: {
+    category: string;
+    winner: string;
+    time: string;
+  }[];
+  participants?: number;
 }
 
 export interface Swimmer {

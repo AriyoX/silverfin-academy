@@ -45,13 +45,11 @@ export const ProgramsSection: React.FC = () => (
                 <span className="text-sm text-secondary">{program.meta}</span>
                 <ArrowRight className="h-4 w-4 text-primary group-hover:translate-x-1 transition-transform" />
               </div>
-              {program.price && (
-                <div className="mt-4 pt-4 border-t border-secondary/10">
-                  <span className="text-primary font-semibold">
-                    UGX {program.price.toLocaleString()} / {program.duration}
-                  </span>
-                </div>
-              )}
+              <div className="mt-4 pt-4 border-t border-secondary/10">
+                <span className="text-primary font-semibold">
+                  Learn More
+                </span>
+              </div>
             </div>
           </Link>
         </div>

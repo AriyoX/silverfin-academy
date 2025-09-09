@@ -35,7 +35,6 @@ const PerformancePage: React.FC = () => {
     description: "High‑performance training targeting national and international meets.",
     ageGroup: "13+ years",
     frequency: "7-9 sessions per week",
-    price: 500000,
     duration: "Monthly",
     levels: ["Performance", "Senior Elite", "National Team"]
   };
@@ -496,7 +495,7 @@ const PerformancePage: React.FC = () => {
                   <div className="bg-white rounded-2xl p-8 border border-secondary/20 shadow-sm mb-8">
                     <div className="text-center mb-6">
                       <h4 className="text-2xl font-bold text-primary mb-2">
-                        UGX {program.price.toLocaleString()}
+                        Contact us for pricing
                       </h4>
                       <p className="text-secondary">per month</p>
                     </div>
@@ -651,7 +650,7 @@ const PerformancePage: React.FC = () => {
                     size="xl"
                     onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   >
-                    Apply Now - UGX {program.price.toLocaleString()}/month
+                    Apply Now - Contact us
                   </Button>
                   <Link href="/programs">
                     <Button variant="hero-outline" size="xl">

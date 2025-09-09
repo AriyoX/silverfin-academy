@@ -31,7 +31,7 @@ app/programs/
 ### Learn to Swim (`/programs/learn-to-swim`)
 - **Target Audience**: Ages 4-10, beginners
 - **Duration**: 4-week courses
-- **Price**: UGX 150,000
+- **Price**: Contact us for pricing
 - **Features**: Water safety, confidence building, foundational technique
 - **Curriculum**: 4-level progressive structure
 - **Instructors**: Dedicated learn-to-swim specialists
@@ -40,7 +40,7 @@ app/programs/
 ### Development Squads (`/programs/development`)
 - **Target Audience**: Ages 9-14, intermediate swimmers
 - **Training**: 4-6 sessions per week
-- **Price**: UGX 300,000/month
+- **Price**: Contact us for pricing
 - **Features**: Technique refinement, aerobic development, competition prep
 - **Levels**: Development 1, Development 2, Pre-Competitive
 - **Schedule**: Structured weekly training program
@@ -49,7 +49,7 @@ app/programs/
 ### Performance/Senior (`/programs/performance`)
 - **Target Audience**: Ages 13+, elite swimmers
 - **Training**: 7-9 sessions per week
-- **Price**: UGX 500,000/month
+- **Price**: Contact us for pricing
 - **Features**: High-performance training, international competition
 - **Components**: Pool training, dryland, mental performance
 - **Requirements**: Entry standards and coach recommendations

@@ -35,7 +35,6 @@ const DevelopmentSquadsPage: React.FC = () => {
     description: "Skill refinement and aerobic base with fun, progressive sets.",
     ageGroup: "9-14 years",
     frequency: "4-6 sessions per week",
-    price: 300000,
     duration: "Monthly",
     levels: ["Development 1", "Development 2", "Pre-Competitive"]
   };
@@ -401,7 +400,7 @@ const DevelopmentSquadsPage: React.FC = () => {
               <div className="bg-white rounded-2xl p-8 border border-secondary/20 shadow-sm mb-8">
                 <div className="text-center mb-6">
                   <h4 className="text-2xl font-bold text-primary mb-2">
-                    UGX {program.price.toLocaleString()}
+                    Contact us for pricing
                   </h4>
                   <p className="text-secondary">per month</p>
                 </div>
@@ -536,7 +535,7 @@ const DevelopmentSquadsPage: React.FC = () => {
                 size="xl"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Join Development - UGX {program.price.toLocaleString()}/month
+                Join Development - Contact us
               </Button>
               <Link href="/programs">
                 <Button variant="hero-outline" size="xl">
