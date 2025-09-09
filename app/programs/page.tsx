@@ -50,13 +50,13 @@ const ProgramsPage: React.FC = () => {
               From your first splash to elite competition, discover the perfect program 
               to unlock your swimming potential with expert coaching and world-class facilities.
             </p>
-            <Button 
+            {/* <Button 
               variant="white" 
               size="xl"
               onClick={() => document.getElementById('programs-overview')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Explore Programs
-            </Button>
+            </Button> */}
           </AnimatedSection>
         </div>
       </div>
@@ -248,7 +248,7 @@ const ProgramsPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
           {getFeaturedCoaches(2).map((coach, index) => (
             <AnimatedSection key={coach.id} animation="fadeIn" delay={200 + index * 100}>
-              <div className="bg-white rounded-2xl p-6 border border-secondary/20 text-center hover:shadow-lg transition-all duration-300">
+              <div className="bg-white rounded-2xl p-6 border border-secondary/20 text-center hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                 <div className="w-32 h-32 mx-auto mb-6 relative">
                   <Image
                     src={coach.imageUrl || "/hero-images/swimmer_1.jpg"}
@@ -261,10 +261,10 @@ const ProgramsPage: React.FC = () => {
                 
                 <h4 className="text-xl font-bold text-primary mb-2">{coach.name}</h4>
                 <p className="text-primary/70 text-sm mb-4">{coach.title}</p>
-                <p className="text-secondary text-sm mb-6">{coach.bio}</p>
+                <p className="text-secondary text-sm mb-6 flex-grow">{coach.bio}</p>
                 
                 {coach.specializations && (
-                  <div className="flex flex-wrap gap-2 justify-center">
+                  <div className="flex flex-wrap gap-2 justify-center mt-auto">
                     {coach.specializations.slice(0, 2).map((spec, specIndex) => (
                       <span key={specIndex} className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">
                         {spec}
