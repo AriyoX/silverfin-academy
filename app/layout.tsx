@@ -16,10 +16,7 @@ export const metadata: Metadata = {
   title: "Silverfin Academy - Swimming Excellence",
   description: "Join Silverfin Academy and unlock swimming excellence with world‑class coaching, supportive community, and pathways from learn‑to‑swim to elite squads.",
   icons: {
-    icon: [
-      { url: "/favicon.png" },
-      { url: "/logo/logo_transparent.png" },
-    ],
+    icon: "/logo/logo_transparent.png",
     apple: "/logo/logo_transparent.png",
   },
   openGraph: {
@@ -45,6 +42,9 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/logo/logo_transparent.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/logo/logo_transparent.png" />
+        <link rel="apple-touch-icon" href="/logo/logo_transparent.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
