@@ -45,6 +45,8 @@ export interface Coach {
   imageUrl?: string;
   certifications?: string[];
   email?: string;
+  specializations?: string[]; // Programs this coach specializes in
+  programs?: string[]; // Program IDs this coach is assigned to
 }
 
 export interface Facility {

@@ -10,7 +10,7 @@ import { ContactSection } from "../../components/sections/ContactSection";
 import { Section } from "../../components/ui/Section";
 import { AnimatedSection } from "../../components/ui/AnimatedSection";
 import { Button } from "../../components/ui/Button";
-import { COACHES } from "../../constants";
+import { getCoachesByProgram } from "../../constants";
 import { 
   Target, 
   TrendingUp, 
@@ -110,9 +110,7 @@ const DevelopmentSquadsPage: React.FC = () => {
     { day: "Saturday", session: "Fun Training & Games", duration: "90 min" }
   ];
 
-  const developmentCoaches = COACHES.filter(coach => 
-    coach.title.includes('Assistant') || coach.name === 'Vincent Kabira' || coach.name === 'Ezra Kakali'
-  );
+  const developmentCoaches = getCoachesByProgram('development-squads');
 
   return (
     <ErrorBoundary>
@@ -359,7 +357,7 @@ const DevelopmentSquadsPage: React.FC = () => {
               <div className="bg-white rounded-2xl p-6 border border-secondary/20 text-center hover:shadow-lg transition-all duration-300 h-full">
                 <div className="w-24 h-24 mx-auto mb-4 relative">
                   <Image
-                    src="/hero-images/swimmer_1.jpg"
+                    src={coach.imageUrl || "/hero-images/swimmer_1.jpg"}
                     alt={`${coach.name} - ${coach.title}`}
                     fill
                     className="object-cover rounded-full border-4 border-primary/20"

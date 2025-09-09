@@ -10,7 +10,7 @@ import {
   DetailedCoachCard, 
   ExpandableCoachCard 
 } from './components';
-import { COACHES } from '../constants';
+import { COACHES, getFeaturedCoaches } from '../constants';
 
 export default function CoachesPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function CoachesPage() {
   };
 
   // Split coaches into featured (first 2) and others
-  const featuredCoaches = COACHES.slice(0, 2);
+  const featuredCoaches = getFeaturedCoaches(2);
   const otherCoaches = COACHES.slice(2);
 
   return (

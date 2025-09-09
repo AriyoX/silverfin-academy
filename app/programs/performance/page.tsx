@@ -10,7 +10,7 @@ import { ContactSection } from "../../components/sections/ContactSection";
 import { Section } from "../../components/ui/Section";
 import { AnimatedSection } from "../../components/ui/AnimatedSection";
 import { Button } from "../../components/ui/Button";
-import { COACHES } from "../../constants";
+import { getCoachesByProgram } from "../../constants";
 import {
   Trophy,
   Target,
@@ -112,9 +112,7 @@ const PerformancePage: React.FC = () => {
     { time: "4:00-5:00 PM", session: "Recovery Session", type: "recovery" }
   ];
 
-  const performanceCoaches = COACHES.filter(coach =>
-    coach.name === 'Ezra Kakali' || coach.title.includes('Head')
-  );
+  const performanceCoaches = getCoachesByProgram('performance-senior');
 
   return (
     <ErrorBoundary>

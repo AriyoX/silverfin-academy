@@ -10,7 +10,7 @@ import { ContactSection } from "../../components/sections/ContactSection";
 import { Section } from "../../components/ui/Section";
 import { AnimatedSection } from "../../components/ui/AnimatedSection";
 import { Button } from "../../components/ui/Button";
-import { COACHES } from "../../constants";
+import { getCoachesByProgram } from "../../constants";
 import { 
   Waves, 
   Shield, 
@@ -99,9 +99,7 @@ const LearnToSwimPage: React.FC = () => {
     }
   ];
 
-  const learnToSwimCoaches = COACHES.filter(coach => 
-    coach.title.includes('Learn to Swim') || coach.name === 'Mugisha Jacob'
-  );
+  const learnToSwimCoaches = getCoachesByProgram('learn-to-swim');
 
   return (
     <ErrorBoundary>
@@ -287,7 +285,7 @@ const LearnToSwimPage: React.FC = () => {
               <div className="bg-white rounded-2xl p-6 border border-secondary/20 text-center hover:shadow-lg transition-all duration-300 h-full">
                 <div className="w-24 h-24 mx-auto mb-4 relative">
                   <Image
-                    src="/hero-images/swimmer_1.jpg"
+                    src={coach.imageUrl || "/hero-images/swimmer_1.jpg"}
                     alt={`${coach.name} - ${coach.title}`}
                     fill
                     className="object-cover rounded-full border-4 border-primary/20"

@@ -116,7 +116,7 @@ export const SwimmerProfile: React.FC<SwimmerProfileProps> = ({ swimmer }) => {
                         <div>
                           <h3 className="font-semibold text-gray-900">{time.event}</h3>
                           <p className="text-sm text-gray-500">
-                            {time.venue} • {new Date(time.date).toLocaleDateString()}
+                            {time.venue} • {time.date ? new Date(time.date).toLocaleDateString() : 'Date not available'}
                           </p>
                         </div>
                         <div className="text-right">

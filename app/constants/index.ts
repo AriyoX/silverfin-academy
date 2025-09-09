@@ -62,7 +62,9 @@ export const COACHES: Coach[] = [
       'Mental Performance Coach',
       'Technical Official Level 3',
       'First Aid/CPR Certified'
-    ]
+    ],
+    specializations: ['Performance Training', 'Competitive Swimming', 'Elite Coaching'],
+    programs: ['performance-senior', 'development-squads']
   },
   {
     id: 'vincent-kabira',
@@ -79,7 +81,9 @@ export const COACHES: Coach[] = [
       'Video Analysis Specialist',
       'Age Group Development Coach',
       'First Aid/CPR Certified'
-    ]
+    ],
+    specializations: ['Stroke Technique', 'Youth Development', 'Competitive Training'],
+    programs: ['development-squads', 'performance-senior']
   },
   {
     id: 'mugisha-jacob',
@@ -94,7 +98,9 @@ export const COACHES: Coach[] = [
       'First Aid/CPR Certified',
       'Aquatic Therapy Assistant',
       'Adult Education Certificate'
-    ]
+    ],
+    specializations: ['Adult Swimming', 'Water Safety', 'Beginner Instruction'],
+    programs: ['learn-to-swim']
   },
   {
     id: 'nancy-akukwatswe',
@@ -109,9 +115,34 @@ export const COACHES: Coach[] = [
       'Water Confidence Instructor',
       'Pediatric First Aid/CPR',
       'Safeguarding Children Certificate'
-    ]
+    ],
+    specializations: ['Children Swimming', 'Water Confidence', 'Pediatric Instruction'],
+    programs: ['learn-to-swim']
   },
 ];
+
+// Helper functions for filtering coaches
+export const getCoachesByProgram = (programId: string): Coach[] => {
+  return COACHES.filter(coach => coach.programs?.includes(programId));
+};
+
+export const getCoachesBySpecialization = (specialization: string): Coach[] => {
+  return COACHES.filter(coach => 
+    coach.specializations?.some(spec => 
+      spec.toLowerCase().includes(specialization.toLowerCase())
+    )
+  );
+};
+
+export const getFeaturedCoaches = (count: number = 2): Coach[] => {
+  return COACHES.slice(0, count);
+};
+
+export const getHeadCoaches = (): Coach[] => {
+  return COACHES.filter(coach => 
+    coach.title.toLowerCase().includes('head')
+  );
+};
 
 export const FACILITIES: Facility[] = [
   {

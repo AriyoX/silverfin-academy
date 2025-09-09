@@ -10,7 +10,7 @@ import { ContactSection } from "../components/sections/ContactSection";
 import { Section } from "../components/ui/Section";
 import { AnimatedSection } from "../components/ui/AnimatedSection";
 import { Button } from "../components/ui/Button";
-import { PROGRAMS, FACILITIES } from "../constants";
+import { PROGRAMS, FACILITIES, getFeaturedCoaches } from "../constants";
 import { ArrowRight, Clock, Users, Target, Award } from "lucide-react";
 
 const ProgramsPage: React.FC = () => {
@@ -228,6 +228,64 @@ const ProgramsPage: React.FC = () => {
             </div>
           </AnimatedSection>
         </div>
+      </Section>
+
+      {/* Coaches Preview */}
+      <Section className="bg-white">
+        <AnimatedSection animation="fadeIn">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold uppercase tracking-wider text-primary">Expert Guidance</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Meet Our Head Coaches
+            </h3>
+            <p className="text-lg text-secondary max-w-3xl mx-auto">
+              Learn from internationally experienced coaches who have competed at the highest levels 
+              and are dedicated to helping you achieve your swimming goals.
+            </p>
+          </div>
+        </AnimatedSection>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+          {getFeaturedCoaches(2).map((coach, index) => (
+            <AnimatedSection key={coach.id} animation="fadeIn" delay={200 + index * 100}>
+              <div className="bg-white rounded-2xl p-6 border border-secondary/20 text-center hover:shadow-lg transition-all duration-300">
+                <div className="w-32 h-32 mx-auto mb-6 relative">
+                  <Image
+                    src={coach.imageUrl || "/hero-images/swimmer_1.jpg"}
+                    alt={`${coach.name} - ${coach.title}`}
+                    fill
+                    className="object-cover rounded-full border-4 border-primary/20"
+                    sizes="128px"
+                  />
+                </div>
+                
+                <h4 className="text-xl font-bold text-primary mb-2">{coach.name}</h4>
+                <p className="text-primary/70 text-sm mb-4">{coach.title}</p>
+                <p className="text-secondary text-sm mb-6">{coach.bio}</p>
+                
+                {coach.specializations && (
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {coach.specializations.slice(0, 2).map((spec, specIndex) => (
+                      <span key={specIndex} className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                        {spec}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
+
+        <AnimatedSection animation="fadeIn" delay={400}>
+          <div className="text-center">
+            <Link href="/coaches">
+              <Button variant="outline">
+                Meet All Our Coaches
+              </Button>
+            </Link>
+          </div>
+        </AnimatedSection>
       </Section>
 
       {/* Call to Action */}
